@@ -115,7 +115,7 @@ button.btn:hover {
 }
 
 /*----------------
- 	Section One
+ 	Section Intro
 ----------------*/
 
 .section-intro {
@@ -230,6 +230,25 @@ button.btn:hover {
 }
 
 /*----------------
+ 	Section One
+----------------*/
+
+.section-one {
+	color: var(--black);
+	padding: 45px 0;
+}
+
+.section-one h1 {
+	margin: 50px 0 48px 0;
+	max-width: 760px;
+	font-size: 42px;
+}
+
+.section-one .depoimentos-dm {
+	content: url(../img/depoimento_coders.png);
+}
+
+/*----------------
  	Section Two
 ----------------*/
 
@@ -318,6 +337,10 @@ button.btn:hover {
 		max-width: 650px;
 		font-size: 36px;
 	}
+
+	.section-one .depoimentos-dm {
+    content: url(../img/depoimento_coders-mobile.png);
+  }
 
 	.section-two .first-dm {
     content: url(../img/dm01-mobile.png);
