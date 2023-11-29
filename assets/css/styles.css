@@ -50,11 +50,11 @@ ul.grid {
 }
 
 .font-heavy-oblique {
-	font-family: 'Avenir-HeavyOblique';
+	font-family: 'Avenir Heavy Oblique';
 }
 
 .font-heavy {
-	font-family: 'Avenir-Heavy';
+	font-family: 'Avenir Heavy';
 }
 
 .underline {
@@ -494,7 +494,7 @@ button.btn:hover {
 
 .section-knowledges .h1-container h1 {
 	margin: -5px 0;
-	font-family: 'Avenir-HeavyOblique';
+	font-family: 'Avenir Heavy Oblique';
 	font-size: 46px;
 }
 
@@ -516,7 +516,7 @@ button.btn:hover {
 .section-knowledges .pilar {
 	margin: 75px auto;
 	text-align: left;
-	font-family: 'Avenir-Heavy';
+	font-family: 'Avenir Heavy';
 }
 
 .section-knowledges .pilar .reverse {
