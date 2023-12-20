@@ -248,14 +248,17 @@ button.btn:hover {
 
 .section-one .depoimentos-dm {
 	content: url(../img/depoimento_coders.png);
+	max-width: 95%
 }
 
 .section-one .depoimentos-dm2 {
 	content: url(../img/depoimento_coders2.png);
+	max-width: 95%
 }
 
 .section-one .depoimentos-dm3 {
 	content: url(../img/depoimento_coders3.png);
+	max-width: 95%
 }
 
 /*----------------
@@ -584,6 +587,7 @@ button.btn:hover {
 
 .section-knowledges .pilar-one .content {
 	max-width: 443px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-one .img-responsive {
@@ -592,6 +596,7 @@ button.btn:hover {
 
 .section-knowledges .pilar-two .content {
 	max-width: 524px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-two .img-responsive {
@@ -601,6 +606,7 @@ button.btn:hover {
 
 .section-knowledges .pilar-three .content {
 	max-width: 464px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-three .img-responsive {
@@ -609,6 +615,7 @@ button.btn:hover {
 
 .section-knowledges .pilar-four .content {
 	max-width: 553px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-four .img-responsive {
