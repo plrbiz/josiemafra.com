@@ -1,0 +1,615 @@
+@import url("styles.css");
+
+/*----------------
+ 	Smartphones
+----------------*/
+@media screen and (max-width: 576px) {
+
+  header {
+    background-color: white;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  /*----------------
+    Section One
+  ----------------*/
+
+  .section-intro {
+    background-color: white;
+    padding: 0 25px;
+  }
+
+  .section-intro h1 {
+    max-width: 329px;
+    font-size: 24px;
+  }
+
+  .section-intro hr {
+    max-width: 60px;
+  }
+
+  .section-intro h2 {
+    font-size: 20px;
+  }
+
+  .section-intro .arrow-container img {
+    margin-top: 5px;
+    width: 10px;
+  }
+
+  .section-intro .arrow-container p {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .section-intro > .video-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 310px;
+    height: 180px;
+  }
+
+  .section-intro button {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 14px 17px;
+    font-size: 12px;
+  }
+
+  .section-intro .payment-forms {
+    width: 135px;
+  }
+
+  .section-intro .grid {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .section-intro .grid li img {
+    height: 15px;
+  }
+
+  .section-intro .grid li h4 {
+    margin-top: 3px;
+    font-size: 7px;
+  }
+
+  /*----------------
+    Section Two
+  ----------------*/
+
+  .section-two {
+    padding: 0 0 40px 0;
+  }
+
+  .section-two h1 {
+    margin: 18px 0 28px 0;
+    max-width: 245px;
+    font-size: 20px;
+  }
+
+  .section-two h2 {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    font-size: 18px;
+  }
+
+  .section-two .first-dm {
+    content: url(../img/dm01-mobile.png);
+  }
+
+  .section-two .second-dm {
+    content: url(../img/dm02-mobile.png);
+  }
+
+  /*----------------
+    Section Three
+  ----------------*/
+
+  .section-three {
+    padding: 0;
+  }
+
+  .section-three .text-container {
+    border-left: 0;
+  }
+
+  .section-three .text-container p {
+    padding-right: 30px;
+    font-size: 16px;
+  }
+
+  .section-three .img-responsive {
+    margin-top: 30px;
+    padding: 0 30px 0 30px;
+  }
+
+  .section-three .grey-box {
+    padding: 35px 0;
+  }
+
+  .section-three .grey-box p {
+    max-width: 290px !important;
+    line-height: 130%;
+		font-size: 14px !important;
+	}
+
+  .section-three .grey-box h1 {
+	  margin: 25px 0 35px 0;
+    font-size: 24px;
+  }
+
+  .section-three .grey-box .arrow-container {
+    max-width: 334px;
+  }
+
+  /*----------------
+    Section Four
+  ----------------*/
+
+  .section-neuro-levels {
+    padding: 20px 0 60px 0;
+  }
+  
+  .section-neuro-levels p:nth-child(1) {
+    font-size: 16px;
+    max-width: 330px;
+  }
+
+  .section-neuro-levels p:nth-child(2) {
+    margin-top: 30px;
+    max-width: 243px;
+    font-size: 15px;
+  }
+
+  .section-neuro-levels p.small,
+  .section-neuro-levels p:last-child {
+    max-width: 335px;
+  }
+  
+  .section-neuro-levels p.small {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .section-neuro-levels p:last-child {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .section-neuro-levels .img-responsive {
+    content: url(../img/escada-niveis-neuro-mobile.png);
+    width: 352px;
+    margin: 45px 0 20px 0;
+  }
+
+  /*----------------
+    Section Five
+  ----------------*/
+
+  .section-brown p {
+    font-size: 14px;
+  }
+  
+  .section-brown p:first-child {
+    max-width: 290px;
+  }
+
+  .section-brown p:nth-child(3) {
+    max-width: 295px;
+  }
+
+  .section-brown .p4 {
+    max-width: 325px;
+    font-size: 16px;
+  }
+
+  .section-brown button {
+    margin-top: 35px;
+    padding: 13px 27px;
+    font-size: 10px;
+  }
+
+  /*----------------
+    Section Six
+  ----------------*/
+
+  .section-six {
+    padding-bottom: 40px;
+    height: 725px;
+  }
+
+  .section-six h1 {
+    margin: 40px 0 30px 0;
+    max-width: 325px;
+    font-size: 22px;
+  }
+
+  .section-six .img-responsive {
+    content: url(../img/more-dms-mobile.png);
+    width: 350px;
+  }
+
+  .section-six button {
+    margin-top: 55px;
+    padding: 23px 30px;
+    font-size: 12px;
+  }
+
+  /*----------------
+    Section History
+  ----------------*/
+
+  .section-history {
+	  padding: 45px 0 0 0;
+  }
+
+  .section-history .middle-lg {
+	  margin: 20px 15px;
+  }
+
+  .section-history .mobile-first-col {
+    order: -1;
+  }
+
+  .section-history .img-history {
+    margin-top: 0;
+    padding: 20px 35px;
+  }
+
+  .section-history .img-casal-legendario {
+    margin: 10px 0 20px 0;
+    padding-right: 0;
+  }
+  
+  .section-history .text-container {
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  .section-history .text-container h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .section-history .text-container p {
+    font-size: 12px;
+  }
+
+  .section-history .check-container {
+    margin-bottom: 18px;
+  }
+
+  .section-history .check-container img {
+    margin: 0 10px 0 0;
+  }
+
+  .section-history .check-container p {
+    padding-left: 28px;
+    font-size: 12px;
+  }
+
+  .section-history > p {
+    max-width: 346px;
+    font-size: 14px;
+  }
+
+  .section-history > hr {
+    width: 35px;
+    margin: 30px 0 15px 0;
+  }
+
+  /*----------------
+    Section Knowledges
+  ----------------*/
+
+  .section-knowledges {
+    padding: 30px 0;
+  }
+
+  .section-knowledges .h1-container {
+	  margin: 20px 0;
+    max-width: 270px;
+  }
+
+  .section-knowledges .h1-container h1 {
+    margin: 5px 0;
+    line-height: 110%;
+    font-size: 22px;
+  }
+
+  .section-knowledges .p1 {
+    font-size: 13px;
+    max-width: 220px;
+  }
+
+  .section-knowledges .p2 {
+    font-size: 13px;
+    max-width: 250px;
+  }
+
+  .section-knowledges .pillars {
+    margin: 0 15px;
+  }
+  
+  .section-knowledges .pilar {
+    margin: 50px auto;
+  }
+
+  .section-knowledges .pilar .reverse {
+    order: 0;
+  }
+
+  .section-knowledges .pilar .title {
+	  margin-top: 8px;
+    font-size: 20px;
+  }
+  
+  .section-knowledges .pilar .content {
+	  margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .section-knowledges .pilar .img-responsive {
+    margin: 30px auto auto auto;
+  }
+
+  .section-knowledges .pilar-one .img-responsive {
+    width: 183px;
+  }
+
+  .section-knowledges .pilar-two .img-responsive {
+    width: 340px;
+  }
+
+  .section-knowledges .pilar-three .img-responsive {
+    width: 160px;
+  }
+
+  .section-knowledges .pilar-four .img-responsive {
+    width: 240px;
+  }
+
+  .section-knowledges .knowledge-dms {
+    content: url(../img/knowledge-dms-mobile.png);
+  }
+
+/*----------------
+  Section Bonus
+----------------*/
+
+.section-bonus h1 {
+  margin: 50px 0 48px 0;
+  max-width: 760px;
+  font-size: 42px;
+}
+
+.section-bonus h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-width: 610px;
+  font-size: 26px;
+}
+
+.section-bonus .img-responsive {
+  content: url(../img/bonus-coders-house-mobile.gif);
+  width: 352px;
+  margin: 45px 0 20px 0;
+}
+
+.section-bonus .img-responsive2 {
+  content: url(../img/bonus-adcodes-mobile.png);
+  width: 352px;
+  margin: 45px 0 20px 0;
+}
+
+  /*----------------
+    Section Devices
+  ----------------*/
+
+  .section-devices {
+    padding: 50px 0;
+  }
+
+  .section-devices h1 {
+    max-width: 350px;
+    font-size: 18px;
+  }
+
+  .section-devices .text p {
+    margin-bottom: 20px;
+    max-width: 281px;
+    font-size: 15px;
+  }
+
+  .section-devices .second-img {
+    content: url(../img/josie-not-alone-mobile.png);
+    width: 350px;
+    height: 640px;
+  }
+
+  .section-devices .text-container  {
+    top: 30px;
+    left: 26px;
+    width: 315px;
+  }
+  
+  .section-devices .text-container h1 {
+    max-width: 275px;
+    font-size: 20px;
+  }
+
+  .section-devices .text-container hr {
+    width: 310px;
+  }
+
+  .section-devices .text-container img {
+    top: -13px;
+    margin-left: 94%;
+    width: 22px;
+  }
+
+  .section-devices .text-container p {
+    max-width: 297px;
+    font-size: 12px;
+  }
+
+  .section-devices .text-container p:last-child {
+    margin-top: 18px;
+    max-width: 490px;
+  }
+  
+  /*----------------
+    Section Price
+  ----------------*/
+
+  .section-price .brown-access {
+    height: 820px;
+  }
+
+  .section-price .brown-access .access-content {
+    margin: 50px auto 0 auto;
+    padding: 0 18px;
+    width: 100%;
+  }
+
+  .section-price .brown-access .access-content > p {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  .section-price .check-container {
+    margin-bottom: 10px;
+  }
+
+  .section-price .check-container img {
+    width: 15px;
+  }
+
+  .section-price .check-container p {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .section-price .price-box {
+    width: 350px;
+    height: 285px;
+  }
+
+  .section-price .price-box button {
+    margin-top: 22px;
+    padding: 15px 22px;
+    font-size: 11px;
+  }
+
+  .section-price .price-container > p {
+    height: 105px;
+  }
+
+  .section-price .price-container .times {
+    font-size: 28px;
+  }
+  
+  .section-price .price-container .price {
+    margin-left: 0;
+    font-size: 80px;
+  }
+
+  .section-price .price-info p:first-child {
+    font-size: 17px;
+  }
+
+  .section-price .price-info p:nth-child(2) {
+    margin: 20px auto 0 auto;
+    max-width: 245px;
+    font-size: 10px;
+  }
+  
+  .section-price .price-info p:last-child {
+    font-size: 12px;
+  }
+
+  .section-price .price-info hr {
+    margin: 20px auto;
+    width: 24px;
+  }
+
+  /*----------------
+    Section Ten
+  ----------------*/
+  
+  .section-questions {
+    padding: 48px 0 42px 0;
+  }
+
+  .section-questions h1 {
+    font-size: 25px;
+  }
+
+  .section-questions p {
+    margin: 20px 0 25px 0;
+    max-width: 324px;
+    font-size: 14px;
+  }
+
+  .section-questions button {
+	  padding: 13px 20px;
+  }
+
+  .section-questions button i {
+    font-size: 15px;
+  }
+  
+  .section-questions button span {
+    margin-top: 1px;
+    margin-left: 6px;
+    font-size: 11px;
+  }
+
+  /*----------------
+    Accordion
+  ----------------*/
+
+  .sec-faq {
+    padding: 0 15px 150px 15px;
+  }
+
+  .accordion h1 {
+    font-size: 24px;
+  }
+
+  .accordion .acc-container {
+    margin: 20px 0;
+  }
+
+  .accordion .acc-container .question {
+    max-width: 330px;
+    font-size: 14px;
+  }
+
+  .accordion .acc-container .question::before {
+    right: -30px;
+  }
+
+  .accordion .acc-container.is-active .question::before {
+    right: -26px;
+  }
+
+  .accordion .acc-container .answer {
+    padding: 20px 14% 0px 3px;
+    font-size: 10px;
+  }
+
+  /*----------------
+    Footer
+  ----------------*/
+
+  footer {
+    font-size: 10px;
+  }
+
+}
