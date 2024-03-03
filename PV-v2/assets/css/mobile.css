@@ -537,39 +537,7 @@
     margin: 20px auto;
     width: 24px;
   }
-
-  /*----------------
-    Section Ten
-  ----------------*/
-  
-  .section-questions {
-    padding: 48px 0 42px 0;
-  }
-
-  .section-questions h1 {
-    font-size: 25px;
-  }
-
-  .section-questions p {
-    margin: 20px 0 25px 0;
-    max-width: 324px;
-    font-size: 14px;
-  }
-
-  .section-questions button {
-	  padding: 13px 20px;
-  }
-
-  .section-questions button i {
-    font-size: 15px;
-  }
-  
-  .section-questions button span {
-    margin-top: 1px;
-    margin-left: 6px;
-    font-size: 11px;
-  }
-
+	
   /*----------------
     Accordion
   ----------------*/
