@@ -829,42 +829,6 @@ button.btn:hover {
 }
 
 /*----------------
- 	Section Questions
-----------------*/
-
-.section-questions {
-	background-color: var(--light-green-bg-color);
-	padding: 60px 0;
-}
-
-.section-questions h1 {
-	line-height: 110%;
-	font-family: 'Avenir Heavy';
-	font-size: 38px;
-}
-
-.section-questions p {
-	margin: 35px 0;
-	max-width: 500px;
-	font-size: 20px;
-}
-
-.section-questions button {
-	display: inline-flex;
-	align-items: center;
-	padding: 19px 30px;
-}
-
-.section-questions button i {
-	font-size: 20px;
-}
-
-.section-questions button span {
-  margin-top: 2px;
-	margin-left: 8px;
-}
-
-/*----------------
  	Section History
 ----------------*/
 
