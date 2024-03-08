@@ -382,6 +382,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <hr>
+      <div class="acc-container" x-bind:class="selected == 3 && 'is-active'"
+        @click="selected !== 3 ? selected = 3 : selected = null">
+        <div class="question">todas as aulas já estão disponíveis?</div>
+        <div class="answer" x-show="selected == 3" x-transition:enter.duration.500ms>
+          <p>não. neste momento, o content CODES já conta com mais de 80 aulas! porém, novas aulas, módulos e ferramentas estão sendo adicionados semanalmente.</p>
+        </div>
+      </div>
+      <hr>
       <div class="acc-container" x-bind:class="selected == 4 && 'is-active'"
         @click="selected !== 4 ? selected = 4 : selected = null">
         <div class="question">funciona para vender mentoria?</div>
