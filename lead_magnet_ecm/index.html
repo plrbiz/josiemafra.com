@@ -548,6 +548,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <footer>
     <p>Copyright &#169; 2023 Josie Mafra All rights reserved</p>
   </footer>
+
+  <script>
+    let search = window.location.search;
+    document.querySelectorAll("a").forEach(element => {
+      if (element.href.includes("hotmart.com"))
+        if (element.href.includes("?")) {
+          search = search.replace("?", "&")
+        }
+      element.href += search
+    })
+  </script>
 </section>  
 </body>
 
