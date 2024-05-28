@@ -1,8 +1,8 @@
-@import url("fonts.css");
+	@import url("fonts.css");
 
 :root {
   --primary-color: #453731;
-  --black: #000;
+  --black: #000000;
 	--light-grey-bg-color: #f3f3f3;
 	--light-green-bg-color: #edfff5;
 	--btn-green-color: #01cc61;
@@ -121,7 +121,7 @@ button.btn:hover {
 ----------------*/
 
 .section-intro {
-	background-color: white;
+	background-color: black;
 	color: var(--primary-color);
 }
 
@@ -129,7 +129,6 @@ button.btn:hover {
   .section-intro {
     background-image: url(../img/josie-bg-rmkt.png);
 		background-size: cover;
-		background-position-x: center;
 		background-position-y: center;
 		color: var(--primary-color);
   }
@@ -140,6 +139,7 @@ button.btn:hover {
 	line-height: 110%;
 	font-family: 'Avenir Heavy';
 	font-size: 38px;
+	color: #f4f1ed;
 }
 
 .section-intro hr {
@@ -154,7 +154,8 @@ button.btn:hover {
 	margin-bottom: 30px;
 	max-width: 320px;
 	font-family: 'Avenir Medium';
-	font-size: 25px;
+	font-size: 35px;
+	color: #bd845b;
 }
 
 .section-intro > .arrow-container {
@@ -226,7 +227,7 @@ button.btn:hover {
 
 .section-intro .grid li h4 {
 	margin-top: 7px;
-	color: var(--black);
+	color: #f4f1ed;
 	font-family: 'Avenir Heavy';
   font-size: 13px;
 }
@@ -934,6 +935,10 @@ footer {
 	.section-two {
 		padding: 0;
 	}
+
+	.section-intro h1 {
+	max-width: 663px;
+}
 
   .section-three .middle-lg {
 		padding: 0 15px;
