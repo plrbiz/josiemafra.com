@@ -1,564 +1,2177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>método content CODES</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TZLKLPNR");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3146295738994849");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=3146295738994849&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Hotjar Tracking Code for https://josiemafra.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3680397, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <!-- favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--  -->
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/player.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://images.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/thumbnail.jpg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/65f1472e26c2190008e2c11f/main.m3u8"
+      as="fetch"
+    />
 
-<head>
+    <link rel="dns-prefetch" href="https://cdn.converteai.net" />
+    <link rel="dns-prefetch" href="https://scripts.converteai.net" />
+    <link rel="dns-prefetch" href="https://images.converteai.net" />
+    <link rel="dns-prefetch" href="https://api.vturb.com.br" />
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TZLKLPNR');</script>
-<!-- End Google Tag Manager -->
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.3/cdn.min.js" defer></script>
-  <link rel="icon" type="image/x-icon" href="/favicon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" media="screen and (min-width: 577px)" href="assets/css/styles.css" />
-  <link rel="stylesheet" media="screen and (max-width: 576px)" href="assets/css/mobile.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-    type="text/css">
-  <title>método content CODES</title>
-  
-  <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '3146295738994849');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=3146295738994849&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
-  
-  <!-- Hotjar Tracking Code for https://josiemafra.com/ -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3680397, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<link rel="preload" href="https://scripts.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/player.js" as="script">
-<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
-<link rel="preload" href="https://images.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/thumbnail.jpg" as="image">
-<link rel="preload" href="https://cdn.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/65f1472e26c2190008e2c11f/main.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://cdn.converteai.net">
-<link rel="dns-prefetch" href="https://scripts.converteai.net">
-<link rel="dns-prefetch" href="https://images.converteai.net">
-<link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <!-- Estilização de configuração... -->
+    <link rel="stylesheet" href="./styles/config.css" />
+    <!-- Estilização para typografias padrões...  -->
+    <link rel="stylesheet" href="./styles/typograph.css" />
+    <!-- Estilização de componentes padrões... -->
+    <link rel="stylesheet" href="./styles/components.css" />
+    <!-- Estilização principal do projeto -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- Mobile -->
+    <link rel="stylesheet" href="./styles/mobile.css" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Nav -->
+        <nav class="d-flex justify-content-between align-items-center">
+          <img
+            src="./assets/svgs/logo.svg"
+            alt="Logo de imagem"
+            height="80px"
+          />
+          <div class="d-flex">
+            <a class="my-text_sm link-in-nav" href="#who-is-it-for"
+              >pra quem é</a
+            >
+            <a class="my-text_sm link-in-nav" href="#what-will-you-learn"
+              >o que você vai aprender</a
+            >
+            <a class="my-text_sm link-in-nav" href="#benefits">benefícios</a>
+            <a class="my-text_sm link-in-nav" href="#who-am-i">quem sou eu</a>
+            <a class="my-text_sm link-in-nav" href="#faq">FAQ</a>
+          </div>
+          <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+            <button class="my-button-sm">INSCREVA-SE</button>
+          </a>
+        </nav>
 
-  <script id="hotmart_launcher_script">
-    (function (l, a, u, n, c, h, e, r) {
-      l['HotmartLauncherObject'] = c; l[c] = l[c] || function () {
-        (l[c].q = l[c].q || []).push(arguments)
-      }, l[c].l = 1 * new Date(); h = a.createElement(u),
-        e = a.getElementsByTagName(u)[0]; h.async = 1; h.src = n; e.parentNode.insertBefore(h, e)
-    })(window, document, 'script', '//launcher.hotmart.com/launcher.js', 'hot');
+        <!--  -->
+        <div class="text-container">
+          <h1 class="my-h1">
+            crie conteúdos <br />que
+            <span id="text-typing"></span>
+          </h1>
 
-    hot('account', '5782bd7e-6752-3b08-8656-d242b17540f6');
-  </script>
-
-</head>
-
-<body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZLKLPNR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-  <section class="section-intro">
-    <header>
-      <img src="assets/icons/logo.svg" alt="Content Codes">
-    </header>
-
-    <h1>atraia uma avalanche de novos clientes que pagam (sem questionar seu preço), fidelizam e indicam</h1>
-    <hr>
-    <div class="video-container">
-      <div id="vid_65f147c23504790008a55418" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img id="thumb_65f147c23504790008a55418" src="https://images.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"> <div id="backdrop_65f147c23504790008a55418" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div> </div> <script type="text/javascript" id="scr_65f147c23504790008a55418"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/player.js", s.async=!0,document.head.appendChild(s); </script>
+          <p class="my-text-md">
+            aprenda o método que vai transformar seu <br />instagram em uma
+            fonte diária de vendas
+          </p>
+          <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+            <button class="my-button-hero">
+              QUERO TRANSFORMAR SEGUIDOR EM CLIENTE
+              <img src="assets/svgs/arrow-right.svg" />
+            </button>
+          </a>
+          <div class="video-container">
+            <div
+              id="vid_65f147c23504790008a55418"
+              style="
+                position: relative;
+                width: 100%;
+                padding: 56.25% 0 0;
+                border-radius: 16px;
+              "
+            >
+              <img
+                id="thumb_65f147c23504790008a55418"
+                src="https://images.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/thumbnail.jpg"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                  border-radius: 16px;
+                "
+              />
+              <div
+                id="backdrop_65f147c23504790008a55418"
+                style="
+                  position: absolute;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  -webkit-backdrop-filter: blur(5px);
+                  backdrop-filter: blur(5px);
+                  border-radius: 16px;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
     </div>
 
-    <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10" target="_blank">
-      <button class="btn" type="button">Quero transformar seguidor em cliente </button>
-    </a>
-    <img class="payment-forms" src="assets/icons/payment-forms.svg" alt="Formas de Pagamento">
+    <main>
+      <!-- Seção de depoimento -->
+      <section class="dep1">
+        <h2 class="my-h2">
+          veja como o CODES está <br />transformando a vida dos alunos
+        </h2>
 
-    <ul class="grid">
-      <li>
-        <img src="assets/icons/clock.svg" alt="Acesso imediato">
-        <h4>Acesso imediato</h4>
-      </li>
-      <li>
-        <img src="assets/icons/suporte.png" alt="Suporte ao vivo no Zoom">
-        <h4>Suporte Individualizado</h4>
-      </li>
-      <li>
-        <img src="assets/icons/certificate.svg" alt="Garantia de 30 dias">
-        <h4>Garantia de 30 dias</h4>
-      </li>
-      </div>
-  </section>
+        <div class="all-dep">
+          <div class="d-flex justify-content-between align-items-end dep-item">
+            <img src="./assets/images/camila-1.png" alt="" />
 
-  <section class="section-one">
-    <h1 class="font-medium">
-      o que os meus alunos
-      <span class="font-heavy-oblique primary-color">estão falando</span> sobre o CODES...
-    </h1>
+            <div>
+              <p class="my-h4" style="text-align: start">
+                antes do CODES
+                <span
+                  >eu cobrava R$ 550,00 pela gestão de redes, hoje o valor é a
+                  partir de R$ 1.200,00</span
+                >
+                (depende da necessidade de cada cliente) e já estou próximo da
+                meta que tenho de clientes para esse serviço, graças a Deus!!
+              </p>
 
-    <div class="depoimentos-dm"></div>
-    <div class="depoimentos-dm2"></div>
-    <div class="depoimentos-dm3"></div>
-  </section>
+              <div class="details-user" style="text-align: start">
+                <p class="my-text-md username">Camila Soths</p>
+                <p class="user-type">Social Media</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-end dep-item">
+            <div>
+              <p class="my-h4" style="text-align: start">
+                minha sócia me achou pelo meu perfil antigo, ela amou meus
+                conteúdos, e me chamou pra trabalhar com ela na agência. Aí eu
+                <span
+                  >comecei a produzir conteúdo para os clientes dela...
+                  simplesmente todos amaram, começaram a indicar a agência,
+                  fomos crescendo, crescendo... e viramos sócias.</span
+                >
+                Tudo isso depois que entrei no CODES, e aprendi criar conteúdo
+                que conecta. Agora estou desenvolvendo um "método" único pra
+                agência, IGUALZINHO aprendi com a Josie.
+              </p>
 
-  <section class="section-three">
-
-    <div class="grey-box">
-      <h1 class="font-medium">o content CODES é para <span class="font-heavy-oblique underline">Profissionais Liberais, Prestadores de Serviço e Social Medias</span> que:</h1>
-
-      <div class="arrow-container">
-        <img src="assets/icons/thin-arrow.svg">
-        <p class="font-medium">querem fazer do Instagram a sua vitrine pra atrair e converter clientes </p>
-      </div>
-
-      <div class="arrow-container">
-        <img src="assets/icons/thin-arrow.svg">
-        <p class="font-medium">querem virar referência no seu nicho e se diferenciar nesse mar de gente igual que existe hoje no
-          Instagram </p>
-      </div>
-
-      <div class="arrow-container">
-        <img src="assets/icons/thin-arrow.svg">
-        <p class="font-medium">querem criar conteúdo que atrai pessoas prontas pra passar o cartão</p>
-      </div>
-  </section>
-
-  <section class="section-neuro-levels">
-    <p class="font-medium">o método content CODES é diferente de tudo o que você já viu, porque ele é baseado em 2
-      conceitos da psicologia de consumo e comportamento humano…</p>
-
-    <div class="img-responsive"></div>
-
-    <p class="font-medium">
-      existem algumas leis que governam o processo de converter ESTRANHOS em CLIENTES FIÉIS... <span class="italic">se o
-        seu conteúdo não obedece à estas leis a venda não acontece!</span>
-    </p>
-  </section>
-
-  <section class="section-six">
-    <h1 class="font-medium">é isso que vai acontecer no seu direct, quando você aplicar o que eu ensino no CODES:</h1>
-
-    <div class="img-responsive"></div>
-
-    <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10" target="_blank">
-      <button class="btn" type="button">Quero transformar conteúdo em dinheiro </button>
-    </a>
-  </section>
-
-  <section class="section-knowledges">
-    <div class="h1-container">
-      <h1>o que você vai encontrar</h1>
-      <h1>dentro do content CODES</h1>
-    </div>
-
-    <div class="pillars">
-      <div class="row pilar pilar-one">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <span>Pilar 1</span>
-          <h2 class="title">alinhamento estratégico do produto</h2>
-          <p class="content font-medium">
-            neste pilar, eu vou te conduzir por 4 passos que tem o poder de tornar o seu serviço <i> único, atrativo e
-            coerente com o que seu público busca desesperadamente!</i>
-          </p>
+              <div class="details-user" style="text-align: start">
+                <p class="my-text-md username">Larissa Oliveira</p>
+                <p class="user-type">Social Media</p>
+              </div>
+            </div>
+            <img src="./assets/images/larissa.png" alt="" />
+          </div>
         </div>
-
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <img class="img-responsive" src="assets/img/pilar-one.png">
-        </div>
-      </div>
-
-      <div class="row pilar pilar-two">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <span>Pilar 2</span>
-          <h2 class="title">concepção do DNA da marca</h2>
-          <p class="content font-medium">
-            neste pilar, eu vou te ensinar a construir uma marca memorável do absoluto zero. uma marca que vai 
-            <i>elevar a percepção de valor do seu serviço, despertar desejo na sua audiência e te permitir cobrar mais sem medo de perder o cliente.</i>
-          </p>
-        </div>
-
-        <div class="col-lg-6 col-sm-6 col-xs-12 reverse">
-          <img class="img-responsive" src="assets/img/pilar-two.png">
-        </div>
-      </div>
-
-      <div class="row pilar pilar-three">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <span>Pilar 3</span>
-          <h2 class="title">estratégia de conteúdo</h2>
-          <p class="content font-medium">
-            aqui é onde eu vou te ensinar a criar conteúdo que <i>atrai o público certo pro seu negócio, que gera conexão e
-            que conduz a audiência até a compra!</i> você vai dominar todos os formatos de conteúdo e será capaz de criar posts envolventes, que
-            despertam no seu público CONFIANÇA e DESEJO DE COMPRAR DE VOCÊ!
-          </p>
-        </div>
-
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <img class="img-responsive" src="assets/img/pilar-three.png">
-        </div>
-      </div>
-
-      <div class="row pilar pilar-four">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <span>Pilar 4</span>
-          <h2 class="title">modelo das 3 forças da oferta</h2>
-          <p class="content font-medium">
-            e pra te colocar anos luz na frente dos concorrentes, no último pilar eu vou te ensinar a criar uma oferta
-            tão atrativa pro seu produto, que as pessoas vão se sentir estúpidas de não comprar! você vai entender as 3
-            forças que separam ofertas flopadas de <span class="italic">ofertas que convertem e escalam!</span>
-          </p>
-        </div>
-
-        <div class="col-lg-6 col-sm-6 col-xs-12 reverse">
-          <img class="img-responsive" src="assets/img/pilar-four.png">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-bonus">
-    <h1>achou que tinha acabado?</h1>
-    <h2><span class="italic">achou errado... eu preparei 2 bônus INACREDITÁVEIS que vão te deixar de queixo
-        caído:</span></h2>
-
-    <div><img class="img-responsive" src="assets/img/bonus-coders-house.gif"></div>
-
-    <h2><span class="italic">e pra explodir sua agenda de atendimentos escalando seus ganhos...</span></h2>
-
-    <div><img class="img-responsive2" src="assets/img/bonus-adcodes.png"></div>
-  </section>
-
-  <section class="section-devices">
-    <h1 class="font-medium">
-      em cada pilar você encontrará ferramentas exclusivas que desenvolvi para tornar
-      seu processo mais rápido e simples!
-      <span class="font-heavy-oblique underline">olha só tudo o que você vai receber...</span>
-    </h1>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <img class="img-responsive" src="assets/img/josie-devices.gif">
-      </div>
-    </div>
-
-    <h1 class="font-medium">
-      e então? está pronto pra criar conteúdo que
-      <span class="font-heavy-oblique underline">enche o seu bolso de dinheiro?</span>
-    </h1>
-  </section>
-
-  <section class="section-price">
-    <div class="brown-access">
-      <img src="/assets/img/curve-arrow.svg">
-
-      <div class="access-content">
-        <p class="font-medium italic">resumindo, você tem 1 ano de acesso ilimitado a:</p>
-
-        <div class="check-container">
-          <img src="assets/icons/check-white.svg">
-          <p>método content CODES™ - <s>R$ 1997/ano</s> - R$ 997/ano*</p>
-        </div>
-
-        <div class="check-container">
-          <img src="assets/icons/check-white.svg">
-          <p>comunidade CODERS House™ - <s>R$ 1164/ano</s></p>
-        </div>
-
-        <div class="check-container">
-          <img src="assets/icons/check-white.svg">
-          <p>Ad CODES™ - mini curso de tráfego pago - <s>R$ 497</s></p>
-        </div>
-
-        <div class="check-container">
-          <img src="assets/icons/check-white.svg">
-          <p>área de membros exclusiva e suporte individualizado</p>
-        </div>
-
-        <div class="check-container">
-          <img src="assets/icons/check-white.svg">
-          <p>meus arquivos e planilhas do Notion</p>
-        </div>
-      </div>
-
-      <div class="access-content">
-        <p class="font-medium italic">valor total - <s>R$ 3658,00</s></p>
-      </div>
-
-      <div class="price-box">
-        <div class="price-container">
+        <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+          <button class="my-button-lg button-section">
+            QUERO TRANSFORMAR CONTEÚDO EM DINHEIRO
+            <img src="./assets/svgs/arrow-right.svg" />
+          </button>
+        </a>
+      </section>
+      <!-- Seção pra quem é... -->
+      <section class="whoItFor">
+        <div class="content">
+          <h2 class="my-h2 link-scroll" id="who-is-it-for">pra quem é</h2>
           <p>
-            <span class="times">12x</span>
-            <span class="price">99,50</span>
+            social medias, profissionais liberais, prestadores de serviço ou
+            qualquer pessoa que:
           </p>
 
-          <div class="price-info">
-            <p>ou R$997,00 à vista*</p>
-            <p>*preço especial de lançamento. assim que as gravações forem concluídas, o preço vai aumentar!</p>
-            <hr>
-            <p class="italic">30 DIAS DE GARANTIA INCONDICIONAL</p>
+          <ul>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">
+                quer fazer do Instagram a sua vitrine pra atrair e converter
+                novos clientes
+              </p>
+            </li>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">
+                quer virar referência no seu nicho e se diferenciar nesse mar de
+                gente igual que existe hoje no Instagram
+              </p>
+            </li>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">
+                quer criar conteúdo que atrai pessoas prontas pra passar o
+                cartão
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <img src="assets/images/iphone-1.png" class="iphone-img" alt="" />
+      </section>
+      <!-- Seção de conteúdo -->
+      <section class="content">
+        <h2 class="my-h2">
+          em 6 passos você vai fazer sua carreira no digital decolar
+        </h2>
+
+        <div class="step-container">
+          <div class="grid-content">
+            <!-- 1 -->
+            <div class="card-item">
+              <p class="my-caption_sm m-0">PASSO 1</p>
+              <h5 class="my-h5 m-0">alinhamento estratégico do produto</h5>
+            </div>
+            <div class="description-item">
+              <p class="description my-text-md">
+                logo de cara eu vou te conduzir por 4 passos que irão criar a
+                narrativa perfeita pra tornar o seu serviço
+                <span
+                  >único, atrativo e coerente com o que seu público busca
+                  desesperadamente!</span
+                >
+              </p>
+
+              <p class="estimated my-caption_sm">estimativa: 1 semana</p>
+            </div>
+            <!-- 2 -->
+            <div class="card-item">
+              <p class="my-caption_sm m-0">PASSO 2</p>
+              <h5 class="my-h5 m-0">concepção do DNA da marca</h5>
+            </div>
+            <div class="description-item">
+              <p class="description my-text-md">
+                neste passo você vai construir a sua marca memorável do absoluto
+                zero. Uma marca que vai
+                <span>elevar a percepção de valor</span> do seu serviço,
+                <span>despertar desejo</span> na sua audiência e te permitir
+                <span>cobrar mais sem medo de perder o cliente.</span>
+              </p>
+
+              <p class="estimated my-caption_sm">estimativa: 2 a 3 semanas</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="card-item">
+              <p class="my-caption_sm m-0">PASSO 3</p>
+              <h5 class="my-h5 m-0">desenvolvendo a estratégia de conteúdo</h5>
+            </div>
+            <div class="description-item">
+              <p class="description my-text-md">
+                aqui é onde você começa a criar conteúdo que
+                <span>atrai o público certo</span> para o seu negócio,
+                <span>gera conexão e conduz a audiência até a compra!</span>
+                Você vai dominar todos os formatos de conteúdo e será capaz de
+                criar posts envolventes, que despertam CONFIANÇA e o DESEJO DE
+                COMPRAR DE VOCÊ!
+              </p>
+
+              <p class="estimated my-caption_sm">estimativa: 3 semanas</p>
+            </div>
+            <!-- 4 -->
+
+            <div class="card-item">
+              <p class="my-caption_sm m-0">PASSO 4</p>
+              <h5 class="my-h5 m-0">
+                crescimento Qualificado e Vendas (Fase Newbie)
+              </h5>
+            </div>
+            <div class="description-item">
+              <p class="description my-text-md">
+                é nesse passo que as primeiras vendas começam a acontecer! Aqui
+                você vai aprender a fase 1 do Plano de Crescimento Qualificado e
+                Vendas que eu uso
+                <span>pra gerar filas de clientes na DM!</span>
+              </p>
+
+              <p class="estimated my-caption_sm">estimativa: 1 a 2 semanas</p>
+            </div>
+            <!-- 5 -->
+
+            <div class="card-item">
+              <p class="my-caption_sm m-0">PASSO 5</p>
+              <h5 class="my-h5 m-0">modelo das 3 Forças da Oferta</h5>
+            </div>
+            <div class="description-item">
+              <p class="description my-text-md">
+                agora que você já está colhendo os primeiros frutos do seu
+                trabalho, chegou a hora de aprender a criar ofertas que deixarão
+                seu público de queixo caído. Você vai entender as 3 forças que
+                separam ofertas flopadas de
+                <span>ofertas que convertem e escalam!</span>
+              </p>
+
+              <p class="estimated my-caption_sm">estimativa: 1 semana</p>
+            </div>
+            <!-- 6 -->
+
+            <div class="card-item">
+              <p class="my-caption_sm m-0">PASSO 6</p>
+              <h5 class="my-h5 m-0">
+                crescimento Qualificado e Vendas (Fase Master)
+              </h5>
+            </div>
+            <div class="description-item">
+              <p class="description my-text-md">
+                chegou a hora de jogar o jogo de gente grande! Com tudo
+                validado, você vai usar a minha estratégia de tráfego pago pra
+                escalar seus resultados! Ao implementar a Fase Master seu perfil
+                se torna uma verdadeira máquina de dinheiro.
+                <span
+                  >(CUIDADO: essa fase pode causar excesso de demanda!)</span
+                >
+              </p>
+
+              <p class="estimated my-caption_sm">estimativa: 3 semanas</p>
+            </div>
+          </div>
+          <!-- mobile data... -->
+          <div
+            class="grid-content-mobile accordion"
+            id="accordionExample2"
+            style="display: none"
+          >
+            <!-- 1 -->
+            <div class="faq-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#step-item-1"
+                    aria-expanded="false"
+                    aria-controls="step-item-1"
+                  >
+                    <div class="my-caption_sm step">PASSO 1</div>
+                    <div class="my-h5">
+                      alinhamento estratégico do produto
+
+                      <div
+                        class="icon-container"
+                        style="width: 24px; height: 24px"
+                      ></div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="step-item-1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body my-text-md">
+                    logo de cara eu vou te conduzir por 4 passos que irão criar
+                    a narrativa perfeita pra tornar o seu serviço
+                    <span
+                      >único, atrativo e coerente com o que seu público busca
+                      desesperadamente!</span
+                    >
+                  </div>
+                </div>
+                <div class="estimated my-caption_sm">estimativa: 3 semanas</div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="faq-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#step-item-2"
+                    aria-expanded="false"
+                    aria-controls="step-item-2"
+                  >
+                    <div class="my-caption_sm step">PASSO 2</div>
+                    <div class="my-h5">
+                      concepção do DNA da marca
+
+                      <div
+                        class="icon-container"
+                        style="width: 24px; height: 24px"
+                      ></div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="step-item-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body my-text-md">
+                    neste passo você vai construir a sua marca memorável do
+                    absoluto zero. Uma marca que vai
+                    <span>elevar a percepção de valor</span> do seu serviço,
+                    <span>despertar desejo</span> na sua audiência e te permitir
+                    <span>cobrar mais sem medo de perder o cliente.</span>
+                  </div>
+                </div>
+                <div class="estimated my-caption_sm">
+                  estimativa: 2 a 3 semanas
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="faq-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#step-item-3"
+                    aria-expanded="false"
+                    aria-controls="step-item-3"
+                  >
+                    <div class="my-caption_sm step">PASSO 3</div>
+                    <div class="my-h5">
+                      desenvolvendo a estratégia de conteúdo
+                      <div
+                        class="icon-container"
+                        style="width: 24px; height: 24px"
+                      ></div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="step-item-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body my-text-md">
+                    aqui é onde você começa a criar conteúdo que
+                    <span>atrai o público certo</span> para o seu negócio,
+                    <span>gera conexão e conduz a audiência até a compra!</span>
+                    Você vai dominar todos os formatos de conteúdo e será capaz
+                    de criar posts envolventes, que despertam CONFIANÇA e o
+                    DESEJO DE COMPRAR DE VOCÊ!
+                  </div>
+                </div>
+                <div class="estimated my-caption_sm">estimativa: 3 semanas</div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="faq-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#step-item-4"
+                    aria-expanded="false"
+                    aria-controls="step-item-4"
+                  >
+                    <div class="my-caption_sm step">PASSO 4</div>
+                    <div class="my-h5">
+                      crescimento Qualificado e Vendas (Fase Newbie)
+                      <div
+                        class="icon-container"
+                        style="width: 24px; height: 24px"
+                      ></div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="step-item-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body my-text-md">
+                    é nesse passo que as primeiras vendas começam a acontecer!
+                    Aqui você vai aprender a fase 1 do Plano de Crescimento
+                    Qualificado e Vendas que eu uso
+                    <span>pra gerar filas de clientes na DM!</span>
+                  </div>
+                </div>
+                <div class="estimated my-caption_sm">
+                  estimativa: 1 a 2 semanas
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="faq-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#step-item-5"
+                    aria-expanded="false"
+                    aria-controls="step-item-5"
+                  >
+                    <div class="my-caption_sm step">PASSO 5</div>
+                    <div class="my-h5">
+                      modelo das 3 Forças da Oferta
+                      <div
+                        class="icon-container"
+                        style="width: 24px; height: 24px"
+                      ></div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="step-item-5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body my-text-md">
+                    agora que você já está colhendo os primeiros frutos do seu
+                    trabalho, chegou a hora de aprender a criar ofertas que
+                    deixarão seu público de queixo caído. Você vai entender as 3
+                    forças que separam ofertas flopadas de
+                    <span>ofertas que convertem e escalam!</span>
+                  </div>
+                </div>
+                <div class="estimated my-caption_sm">estimativa: 1 semana</div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="faq-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#step-item-6"
+                    aria-expanded="false"
+                    aria-controls="step-item-6"
+                  >
+                    <div class="my-caption_sm step">PASSO 6</div>
+                    <div class="my-h5">
+                      crescimento Qualificado e Vendas (Fase Master)
+                      <div
+                        class="icon-container"
+                        style="width: 24px; height: 24px"
+                      ></div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="step-item-6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body my-text-md">
+                    chegou a hora de jogar o jogo de gente grande! Com tudo
+                    validado, você vai usar a minha estratégia de tráfego pago
+                    pra escalar seus resultados! Ao implementar a Fase Master
+                    seu perfil se torna uma verdadeira máquina de dinheiro.
+                    <span
+                      >(CUIDADO: essa fase pode causar excesso de
+                      demanda!)</span
+                    >
+                  </div>
+                </div>
+                <div class="estimated my-caption_sm">estimativa: 3 semanas</div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <a
+            href="https://pay.hotmart.com/H84711655R?checkoutMode=10"
+            class="link-with-margin"
+          >
+            <button class="my-button-lg">
+              QUERO TRANSFORMAR CONTEÚDO EM DINHEIRO
+              <img src="assets/svgs/arrow-right.svg" alt="" />
+            </button>
+          </a>
+        </div>
+
+        <h2 class="my-h2 link-scroll" id="what-will-you-learn">
+          olha só o que você vai aprender no CODES
+        </h2>
+
+        <div class="code-content code-content-initial">
+          <h4 class="m-0">BRANDING E POSICIONAMENTO</h4>
+
+          <div class="grid-content">
+            <div class="card-item">
+              <img
+                src="./assets/svgs/identify-icon.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">identidade da marca</h5>
+              <p class="m-0">
+                você aprenderá a criar e gerenciar a identidade da sua marca,
+                desde a definição dos valores e missão até a escolha de
+                elementos visuais, sensoriais e tom de voz. Você também vai
+                entender como construir uma marca autêntica que conecte com o
+                público que você quer atrair.
+              </p>
+            </div>
+            <div class="card-item">
+              <img
+                src="./assets/svgs/config-icon.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">mecanismo único</h5>
+              <p class="m-0">
+                cada nicho tem seu nível de sofisticação e, por isso, é crucial
+                saber se diferenciar no seu mercado. Você vai aprender a
+                identificar e desenvolver o diferencial que vai tornar seu
+                produto único. Isso é chave pra você se destacar e criar uma
+                proposta de valor inimitável.
+              </p>
+            </div>
+            <div class="card-item">
+              <img
+                src="./assets/svgs/apple-icon.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">posicionamento</h5>
+              <p class="m-0">
+                você não precisa ser a número 1 do seu nicho, só precisa ser a
+                melhor escolha pra quem busca pelo seu serviço. E pra isso
+                acontecer, você vai aprender a construir um posicionamento forte
+                que alinha seus valores, diferenciais e mensagem com as
+                necessidades e desejos do seu público-alvo.
+              </p>
+            </div>
           </div>
         </div>
 
-        <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10" target="_blank">
-          <button class="btn" type="button">
-            Quero transformar conteúdo em dinheiro
+        <div class="code-content">
+          <h4 class="m-0">ESTRATÉGIA E CONTEÚDO</h4>
+
+          <div class="grid-content">
+            <div class="card-item">
+              <img
+                src="./assets/svgs/tabler-icon-calendar-event.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">calendário de postagem</h5>
+              <p class="m-0">
+                com templates exclusivos da Esteira de Produção e do Funil de
+                Conteúdo, você será capaz de criar conteúdos que atraem,
+                conectam e vendem de forma cíclica. Assim, seu processo de
+                produção ficará mais estruturado, otimizando seu tempo e
+                mantendo a consistência.
+              </p>
+            </div>
+            <div class="card-item">
+              <img
+                src="./assets/svgs/tabler-icon-brand-disney.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">storytelling <span>(em breve)</span></h5>
+              <p class="m-0">
+                aprenda a usar o storytelling para criar histórias envolventes
+                que fortalecem a conexão emocional com o seu público. Dominar as
+                técnicas e estruturas que eu ensino no CODES vai tornar suas
+                mensagens memoráveis e capazes de inspirar ações.
+              </p>
+            </div>
+            <div class="card-item">
+              <img
+                src="./assets/svgs/tabler-icon-book.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">linha editorial <span>(em breve)</span></h5>
+              <p class="m-0">
+                descubra como definir uma linha editorial que te fará criar
+                conteúdos assertivos. Com isso você será mais estratégica e
+                intencional na escolha de temas que ressoem com seu
+                público-alvo, fortalecendo a relevância de cada uma das suas
+                publicações.
+              </p>
+            </div>
+            <div class="card-item">
+              <img
+                src="./assets/svgs/tabler-icon-book.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">copywriting</h5>
+              <p class="m-0">
+                essa trava na hora de criar seus conteúdos só acontece porque
+                você não segue uma estrutura validada. Por isso, vou te revelar
+                os 19 CODES e as estruturas de Copy Magnéticas que eu uso para
+                criar narrativas que convertem seguidor em cliente. (chega de
+                ficar falando sozinha ou de correr atrás de cliente)
+              </p>
+            </div>
+
+            <div class="card-item">
+              <img
+                src="./assets/svgs/tabler-icon-heart.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">engajamento</h5>
+              <p class="m-0">
+                descubra como criar interações genuínas com o seu público. Você
+                aprenderá o que realmente importa na construção de relações
+                verdadeiras e duradouras. “E pode ficar tranquila: aqui não tem
+                hackezinhos baratos de engajamento! Eu e você sabemos que eles
+                não funcionam, não é mesmo?!“ 😉
+              </p>
+            </div>
+            <div class="card-item">
+              <img
+                src="./assets/svgs/tabler-icon-recharging.svg"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <h5 class="m-0 my-h5">impulsionamento estratégico</h5>
+              <p class="m-0">
+                aprenda a usar o tráfego pago de forma estratégica para acelerar
+                e multiplicar seus resultados. No CODES você vai aprender a
+                escalar seus ganhos utilizando o mínimo de investimento e sem
+                ter que criar anúncios (essa estratégia gera uma avalanche de
+                crescimento qualificado e vendas ao mesmo tempo)
+              </p>
+            </div>
+          </div>
+
+          <div class="bonus-container">
+            <div class="content">
+              <div class="top-content">
+                <h3 class="">BÔNUS EXCLUSIVO</h3>
+                <h2 class="my-h2">ad CODES</h2>
+              </div>
+
+              <p>
+                o ad CODES é um mini curso de tráfego pago local, onde você vai
+                aprender a usar a inteligência do Facebook para gerar filas de
+                clientes no seu negócio local.
+              </p>
+
+              <ul>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">
+                    como configurar sua BM, contas de anúncio e pixel
+                  </p>
+                </li>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">
+                    como encontrar ideias infinitas para anúncios
+                  </p>
+                </li>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">
+                    copy para tornar seus anúncios mais persuasivos
+                  </p>
+                </li>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">como criar criativos irresistíveis</p>
+                </li>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">estratégias de prospecção</p>
+                </li>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">análise de métricas e otimização</p>
+                </li>
+                <li>
+                  <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                  <p class="my-text-md">como criar campanhas na prática</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+            <button class="my-button-lg button-section" style="margin: auto">
+              QUERO TRANSFORMAR CONTEÚDO EM DINHEIRO
+              <img src="./assets/svgs/arrow-right.svg" />
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section dep2 -->
+      <section class="dep2">
+        <h2 class="my-h2">
+          olha o que os meus alunos estão falando sobre o CODES
+        </h2>
+
+        <div class="grid-cards">
+          <!-- 1 -->
+          <div class="grid-item">
+            <p class="my-text-md">
+              seu curso é diferente de muitos porque ele é muito profundo. Ele
+              não só ensina sobre conteúdos, é algo que desperta emoções,
+              proporciona reflexões que vão muito além do negócio em si e traz
+              um direcionamento profundo! Sem contar que
+              <span>as aulas são leves, claras e muito objetivas!</span> Ser
+              aluna do CODES foi uma das minhas melhores escolhas, sem dúvidas!
+              ❤️
+            </p>
+
+            <div class="card-details">
+              <img
+                src="./assets/images/avatars/emylle-mendes.png"
+                width="76px"
+                height="76px"
+                alt=""
+              />
+              <div class="user-details">
+                <p class="user-name my-text-md">Emylle Mendes</p>
+                <p class="user-type my-text_sm">Design social media</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2-->
+          <div class="grid-item">
+            <p class="my-text-md">
+              <span
+                >que didática Josie! Não vi nada igual em outros cursos</span
+              >
+              tããããããão massivos e tão distantes, que você acha que não é capaz
+              de aplicar, tanta coisa sem sentido em certas fases...Estou
+              adorando a leveza do curso, é leve mas com
+              <span> conteúdo valendo ouro, palpável e tangível. </span>
+              Obrigada!
+            </p>
+
+            <div class="card-details">
+              <img
+                src="./assets/images/avatars/leila-ruffini.png"
+                width="76px"
+                height="76px"
+                alt=""
+              />
+              <div class="user-details">
+                <p class="user-name my-text-md">Leila Ruffini</p>
+                <p class="user-type my-text_sm">Social Media</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="grid-item">
+            <p class="my-text-md">
+              <span
+                >se você é uma pessoa que deseja entender profundamente sobre
+                marketing de conteúdo, e a criar conteúdo com estratégia, o
+                CODES é pra você.</span
+              >
+              E a palavra ”profundamente” foi utilizada de propósito, porque o
+              CODES não é um curso nada raso. Prepare-se para mergulhar em
+              bastante autoconhecimento e começar a enxergar as coisas com
+              outros olhos.
+            </p>
+
+            <div class="card-details">
+              <img
+                src="./assets/images/avatars/camila-souza.png"
+                width="76px"
+                height="76px"
+                alt=""
+              />
+              <div class="user-details">
+                <p class="user-name my-text-md">Camila Souza</p>
+                <p class="user-type my-text_sm">Instrutora de pilares</p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="grid-item">
+            <p class="my-text-md">
+              o CODES tem sido fundamental na minha carreira no digital.
+              <span
+                >Sem ele, eu provavelmente estaria perdida, tentando realizar
+                ações aleatórias sem pensar, e me sobrecarregando.</span
+              >
+              Depois do CODES eu entendi que ações no digital precisam ser
+              pensadas, bem estruturadas e que podem ser bem mais fáceis do que
+              muita gente prega por aí.
+            </p>
+
+            <div class="card-details">
+              <img
+                src="./assets/images/avatars/carol-saito.png"
+                width="76px"
+                height="76px"
+                alt=""
+              />
+              <div class="user-details">
+                <p class="user-name my-text-md">Carol Saito</p>
+                <p class="user-type my-text_sm">Social Media</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seção de bonus exclusivo  -->
+
+      <section class="exclusive-bonus">
+        <div class="content">
+          <h3 class="my-caption_lg">BÔNUS EXCLUSIVO</h3>
+          <h2 class="my-h2">comunidade CODERS House</h2>
+
+          <ul>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md" class="my-text-md">
+                estratégias que estão funcionando no Instagram
+              </p>
+            </li>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">
+                análises de posts campeões em vários nichos
+              </p>
+            </li>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">
+                biblioteca de ideias de conteúdo para crescimento, engajamento e
+                vendas
+              </p>
+            </li>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">
+                análises das estratégias de perfis de sucesso do digital
+              </p>
+            </li>
+            <li>
+              <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+              <p class="my-text-md">acesso aos bastidores do meu negócio</p>
+            </li>
+          </ul>
+        </div>
+        <div class="iphone-container">
+          <img src="./assets/gifs/output.gif" alt="" class="gif-image" />
+          <img
+            src="./assets/images/iphone-2.png"
+            class="my-custom-image"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- section dep3 -->
+
+      <section class="dep-3">
+        <h2 class="my-h2">
+          é isso que vai acontecer no seu direct quando você aplicar o que eu
+          ensino no CODES
+        </h2>
+
+        <div class="dep-3-container">
+          <img src="./assets/images/dep3.png" alt="" />
+        </div>
+        <div class="dep-3-container-mobile" style="display: none">
+          <img src="./assets/images/mobile/dep-mobile.png" alt="" />
+        </div>
+        <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+          <button class="my-button-lg">
+            QUERO FILAS DE CLIENTES NA DM
+            <img src="./assets/svgs/arrow-right.svg" />
           </button>
         </a>
-      </div>
-    </div>
-  </section>
+      </section>
+      <!-- Seção de benefícios -->
 
-  <section class="sec-faq">
-    <div class="accordion" x-data="{selected:null}">
-      <h1>D&#250;vidas Frequentes</h1>
-      <div class="acc-container" x-bind:class="selected == 0 && 'is-active'"
-        @click="selected !== 0 ? selected = 0 : selected = null" x-transition.duration.500ms>
-        <div class="question">funciona para quem est&#225; come&#231;ando do zero ou n&#227;o tem experi&#234;ncia com
-          Marketing?</div>
-        <div class="answer" x-show="selected == 0" x-transition:enter.duration.500ms>
-          <p>com certeza! o content CODES foi desenvolvido pra quem est&#225; come&#231;ando do
-            zero no digital e no marketing. a &#250;nica coisa que voc&#234; precisa saber &#233; usar o
-            Instagram! ele foi desenvolvido para profissionais que prestam servi&#231;o e que
-            querem usar o Instagram como vitrine pra capta&#231;&#227;o de clientes. o meu m&#233;todo &#233;
-            composto por 4 pilares que v&#227;o te conduzir por um caminho claro que vai
-            transformar voc&#234; num expert na comunica&#231;&#227;o e nas vendas. ao aplicar os
-            conhecimentos que ensino nas aulas, v&#227;o ser os seus seguidores que vir&#227;o at&#233;
-            voc&#234; pedindo pelo seu produto.</p>
+      <section class="benefits">
+        <div class="our-difference-container">
+          <div class="main-container">
+            <h3 class="my-caption_lg">POR TRÁS DO NOSSO MÉTODO</h3>
+            <h2 class="my-h2">nosso diferencial</h2>
+            <p class="my-text-md">
+              nosso método se apoia em conceitos de psicologia de consumo e
+              comportamento humano que mostram que com pequenos ajustes,
+              qualquer conteúdo pode se transformar em uma máquina de vendas.
+            </p>
+
+            <ul>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  você vai aprender a criar conteúdo intencional
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  vai saber quando e em que formato postar
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  vai atrair clientes mesmo com poucos inscritos
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  e vai se destacar no meio da multidão
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="card-container">
+            <div class="card-item">
+              <h5 class="my-caption_sm">JORNADA DE <br />DECISÃO DA COMPRA</h5>
+              <p class="my-text-md">
+                a mente precisa passa por 4 fases até chegar ao momento de
+                comprar: reconhecimento, conscientização, visualização e
+                confiança.
+              </p>
+            </div>
+            <div class="card-item">
+              <h5 class="my-caption_sm">ESCADA DOS NÍVEIS NEUROLÓGICOS</h5>
+              <p class="my-text-md">
+                para vender você precisa criar mensagens que despertem senso de
+                comunidade, gerem identificação e compartilhem os mesmos valores
+                de quem lê.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 1 && 'is-active'"
-        @click="selected !== 1 ? selected = 1 : selected = null">
-        <div class="question">funciona para quem tem produto de ticket alto?</div>
-        <div class="answer" x-show="selected == 1" x-transition:enter.duration.500ms>
-          <p>o content CODES &#233; perfeito pra quem tem ticket alto! l&#225; dentro voc&#234; ter&#225; acesso a
-            um conjunto de ferramentas super poderosas que foram desenvolvidas
-            especialmente pra gerar desejo pelo seu trabalho e por tudo o que voc&#234; vende.
-            uma dessas ferramentas &#233; a Equa&#231;&#227;o de Valor: uma f&#243;rmula capaz de elevar em
-            10 vezes a percep&#231;&#227;o de valor de qualquer produto ou servi&#231;o. pense
-            num produto, servi&#231;o ou experi&#234;ncia que você sonha em ter, mas ainda n&#227;o tem
-            dinheiro suficiente pra pagar por ele. agora, imagine que a empresa que vende
-            esse produto te desse 24 horas pra você comprar pagando 10% do valor. o que
-            voc&#234; faria pra conseguir o dinheiro? bem, eu acho que você j&#225; deve ter entendido o
-            poder dessa ferramenta. ela &#233; respons&#225;vel por moldar sua oferta pra gerar na
-            mente do seu cliente o pensamento de que ele est&#225; “tirando vantagem” de voc&#234;.
-            quando voc&#234; aplicar essa e outras t&#233;cnicas que vou te ensinar, vender seu servi&#231;o
-            ou produto de alto ticket se tornar&#225; uma tarefa simples.</p>
+        <div class="our-benefits-container">
+          <h2 class="my-h2 link-scroll" id="benefits">
+            benefícios ao se inscrever no CODES
+          </h2>
+
+          <div class="grid-container">
+            <div class="grid-item">
+              <img
+                src="./assets/svgs/tabler-icon-shield-check-filled.svg"
+                alt=""
+              />
+              <h5 class="my-h5">garantia incondicional <br />de 30 dias</h5>
+            </div>
+            <div class="grid-item">
+              <img src="./assets/svgs/tabler-icon-eye-filled.svg" alt="" />
+              <h5 class="my-h5">
+                acesso imediato a <br />
+                todas as aulas
+              </h5>
+            </div>
+            <div class="grid-item">
+              <img
+                src="./assets/svgs/tabler-icon-circle-key-filled.svg"
+                alt=""
+              />
+              <h5 class="my-h5">acesso ilimitado <br />durante 1 ano</h5>
+            </div>
+            <div class="grid-item">
+              <img
+                src="./assets/svgs/tabler-icon-credit-card-filled.svg"
+                alt=""
+              />
+              <h5 class="my-h5">
+                pagamento à vista no PIX e no Cartão em até 12 vezes
+              </h5>
+            </div>
+            <div class="grid-item">
+              <img
+                src="./assets/svgs/tabler-icon-message-circle-2-filled.svg"
+                alt=""
+              />
+              <h5 class="my-h5">
+                suporte individualizado e direto na plataforma
+              </h5>
+            </div>
+            <div class="grid-item">
+              <img src="./assets/svgs/tabler-icon-vip.svg" alt="" />
+              <h5 class="my-h5">área exclusiva <br />de membros</h5>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 2 && 'is-active'"
-        @click="selected !== 2 ? selected = 2 : selected = null">
-        <div class="question">funciona para quem tem produto de ticket baixo?</div>
-        <div class="answer" x-show="selected == 2" x-transition:enter.duration.500ms>
-          <p>sim! os pilares 2 (Concep&#231;&#227;o do DNA de Marca) e 4 (Modelo das 3 For&#231;as da
-            Oferta) foram criados justamente com esse prop&#243;sito. neles voc&#234; ter&#225; todo o
-            conhecimento e as ferramentas que precisa pra criar uma marca pessoal de
-            destaque e uma oferta irresist&#237;vel. essa combina&#231;&#227;o &#233; altamente eficaz quando o
-            assunto &#233; elevar percep&#231;&#227;o de valor do seu servi&#231;o ou produto.</p>
+      </section>
+
+      <!-- seção de preço  -->
+      <section class="price">
+        <div>
+          <h2 class="my-h2">
+            resumindo, você tem 1 ano de <br />acesso ilimitado a:
+          </h2>
+          <div class="first-container">
+            <ul>
+              <li>
+                <img src="assets/svgs/check-icon-dark.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  método content CODES<sup>TM</sup>
+                  <span>
+                    <span class="desktop-only">- </span> <del>R$ 1997/ano</del>
+                  </span>
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/check-icon-dark.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  comunidade CODERS House<sup>TM</sup>
+                  <span>
+                    <span class="desktop-only">- </span> <del>R$ 1164/ano</del>
+                  </span>
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/check-icon-dark.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  CODES<sup>TM</sup> mini curso de tráfego pago
+                  <span>
+                    <span class="desktop-only">- </span><del>R$ 497/ano</del>
+                  </span>
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/check-icon-dark.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  área de membros exclusiva e suporte <br />individualizado
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/check-icon-dark.svg" alt="" />
+
+                <p class="my-text-md" class="my-text-md">
+                  meus arquivos e planilhas do Notion
+                </p>
+              </li>
+            </ul>
+
+            <h4 class="my-h4">valor total - <del>R$ 3658,00</del></h4>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 3 && 'is-active'"
-        @click="selected !== 3 ? selected = 3 : selected = null">
-        <div class="question">todas as aulas já estão disponíveis?</div>
-        <div class="answer" x-show="selected == 3" x-transition:enter.duration.500ms>
-          <p>não. neste momento, o content CODES já conta com mais de 80 aulas! porém, novas aulas, módulos e ferramentas estão sendo adicionados periodicamente.</p>
+        <div style="width: 100%">
+          <h2 class="my-h2">
+            atenção, oferta <br />
+            temporária!
+          </h2>
+          <div class="second-container">
+            <div>
+              <div class="current-price-container">
+                <h2 class="my-h1"><span>12x</span> 99,50</h2>
+                <p class="my-text_lg">ou R$ 997,00 à vista*</p>
+              </div>
+              <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+                <button class="my-button-lg" style="margin: auto">
+                  <span class="text-in-mobile" style="display: none">
+                    QUERO MAIS CLIENTES NO INSTA
+                  </span>
+                  <span class="text-in-desktop">
+                    QUERO TRANSFORMAR CONTEÚDO EM DINHEIRO
+                  </span>
+                  <img src="./assets/svgs/arrow-right.svg" />
+                </button>
+              </a>
+
+              <p class="obs-tag my-text-md">
+                *preço especial de lançamento. Assim que as gravações forem
+                concluídas, o preço vai aumentar!
+              </p>
+            </div>
+            <div class="bottom-container">
+              <img
+                src="./assets/svgs/tabler-icon-shield-check-filled-white.svg"
+                alt=""
+                width="40px"
+                height="40px"
+              />
+              <p class="my-h5">garantia incondicional de 30 dias</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 4 && 'is-active'"
-        @click="selected !== 4 ? selected = 4 : selected = null">
-        <div class="question">funciona para vender mentoria?</div>
-        <div class="answer" x-show="selected == 4" x-transition:enter.duration.500ms>
-          <p>funciona muito! tanto para mentoria individual ou em grupo, ou ainda presencial
-            ou online. o content CODES tem exatamente o que mentores, consultores,
-            coaches e qualquer outro profissional liberal e aut&#244;nomo precisam pra construir
-            uma marca pessoal forte que vai gerar diferencia&#231;&#227;o e desejo no seu cliente. se
-            voc&#234; quer ver a sua DM lotada de mensagens, o meu m&#233;todo &#233; perfeito pra voc&#234;!</p>
+      </section>
+
+      <section class="faq-data">
+        <div class="bg-icon">
+          <div class="content">
+            <h2 class="my-h2 link-scroll" id="faq">
+              perguntas <br />
+              frequentes
+            </h2>
+
+            <div class="faq-items accordion" id="accordionExample">
+              <div class="column-items">
+                <!-- 1 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-1"
+                        aria-expanded="false"
+                        aria-controls="faq-item-1"
+                      >
+                        <div class="my-h5">
+                          funciona para quem está começando do zero ou não tem
+                          experiência com Marketing?
+
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-1"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        o content CODES foi desenvolvido pra quem está começando
+                        do zero no digital e no marketing. A única coisa que
+                        você precisa saber é usar o Instagram! Ele foi
+                        desenvolvido para profissionais que prestam serviço e
+                        que querem usar o Instagram como vitrine pra captação de
+                        clientes.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-2"
+                        aria-expanded="false"
+                        aria-controls="faq-item-2"
+                      >
+                        <div class="my-h5">
+                          funciona para quem tem produto de ticket alto?
+
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        o content CODES é ideal para quem trabalha com ticket
+                        alto. Ele oferece ferramentas poderosas para gerar
+                        desejo pelo seu trabalho e produtos. Uma delas é a
+                        Equação de Valor, que aumenta em 10 vezes a percepção de
+                        valor do que você vende. Imagine poder comprar algo dos
+                        seus sonhos por 10% do valor. Essa ferramenta cria a
+                        sensação de que o cliente está ‘tirando vantagem’. Ao
+                        aplicar essa e outras técnicas, vender seu produto ou
+                        serviço de alto ticket ficará fácil.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-3"
+                        aria-expanded="false"
+                        aria-controls="faq-item-3"
+                      >
+                        <div class="my-h5">
+                          todas as aulas já estão disponíveis no momento da
+                          compra?
+
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        ainda não. Neste momento, o content CODES já conta com
+                        mais de 90 aulas! porém, novas aulas, módulos e
+                        ferramentas estão sendo adicionados periodicamente.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-4"
+                        aria-expanded="false"
+                        aria-controls="faq-item-4"
+                      >
+                        <div class="my-h5">
+                          funciona para vender mentoria?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-4"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        sim! Seja para mentoria individual, em grupo, presencial
+                        ou online. O content CODES oferece o que mentores,
+                        consultores, coaches e profissionais autônomos precisam
+                        para criar uma marca pessoal forte, que gera
+                        diferenciação e desejo. Se quer sua DM cheia de clientes
+                        querendo comprar, meu método é pra você!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-5"
+                        aria-expanded="false"
+                        aria-controls="faq-item-5"
+                      >
+                        <div class="my-h5">
+                          funciona para vender produto físico?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-5"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        apesar de não ser específico para quem tem negócio
+                        físico. Tudo o que ensino no CODES pode ser adaptado
+                        para venda de produtos físicos. Você entenderá
+                        profundamente seu público, posicionará seu produto de
+                        forma estratégica para se diferenciar e dominará a
+                        comunicação para gerar vendas sem correr atrás de
+                        ninguém.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 6 -->
+
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-6"
+                        aria-expanded="false"
+                        aria-controls="faq-item-6"
+                      >
+                        <div class="my-h5">
+                          ensina copy?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-6"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        com certeza! No módulo Desenvolvendo a Estratégia de
+                        Conteúdo nós mergulhamos na escrita dos posts explorando
+                        desde estruturas de títulos até a escrita de cada página
+                        do carrossel e da descrição. Além das estruturas de copy
+                        você aprenderá os 19 CODES que eu uso no meu conteúdo
+                        para viciar meus seguidores.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-7"
+                        aria-expanded="false"
+                        aria-controls="faq-item-7"
+                      >
+                        <div class="my-h5">
+                          as aulas são ao vivo?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-7"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        não, as aulas são gravadas. Porém, temos um suporte
+                        capacitado que fica disponível de segunda a sexta por
+                        e-mail e também diretamente na área de membros. Detalhe:
+                        A nossa área de membros te permite comentar a cada aula
+                        pra você deixar suas dúvidas conforme elas forem
+                        surgindo. Dessa forma, você terá um suporte prático,
+                        rápido e eficiente te ajudando ao longo do seu processo!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-8"
+                        aria-expanded="false"
+                        aria-controls="faq-item-8"
+                      >
+                        <div class="my-h5">
+                          quanto tempo terei acesso ao curso?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-8"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        as aulas, ferramentas e suporte ficarão disponíveis por
+                        1 ano pra você rever e usar quantas vezes quiser.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column-items">
+                <!-- 9 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-9"
+                        aria-expanded="false"
+                        aria-controls="faq-item-9"
+                      >
+                        <div class="my-h5">
+                          já fiz vários cursos e nada funcionou pra mim, o
+                          content CODES vai mesmo funcionar?
+
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-9"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        sim e não! deixa eu explicar: antes de criar o content
+                        CODES, eu comprei e consumi vários cursos de marketing
+                        do Brasil (desde os mais baratos até os mais caros). Eu
+                        queria entender o nível de informação que é entregue no
+                        mercado atualmente. 95% deles foram uma decepção e uma
+                        completa perda de dinheiro. Por isso, existe uma grande
+                        chance de você só ter consumido informação rasa que não
+                        te leva a lugar nenhum e isso justifica sua falta de
+                        resultado. MAS, pode ser que você já tenha consumido
+                        alguns dos poucos cursos que são bons. Se esse for o seu
+                        caso e mesmo assim ele “não funcionou pra você”, pode
+                        ser que o problema neste caso seja você. Não me leve a
+                        mal, o content CODES é extremamente poderoso e tudo que
+                        tem lá dentro pode transformar sua vida profissional de
+                        verdade. Porém, não é milagre! Você vai ter que dedicar
+                        um pouco do seu tempo pra estudar e aplicar o que
+                        ensino.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 10 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-10"
+                        aria-expanded="false"
+                        aria-controls="faq-item-10"
+                      >
+                        <div class="my-h5">
+                          funciona para quem tem produto de ticket baixo?
+
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-10"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        o passo 2 (DNA de Marca) e 5 (3 Forças da Oferta) foram
+                        feitos para isso. Eles te dão o conhecimento e as
+                        ferramentas para criar uma marca forte e uma oferta
+                        irresistível. Essa combinação é eficaz para aumentar a
+                        percepção de valor do seu serviço ou produto.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-11"
+                        aria-expanded="false"
+                        aria-controls="faq-item-11"
+                      >
+                        <div class="my-h5">
+                          o que acontece caso eu não me identifique com o
+                          conteúdo?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-11"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        você tem 30 dias de garantia pra consumir as aulas, usar
+                        as ferramentas, suporte... tudo mesmo! Se por qualquer
+                        razão você achar que o CODES não foi um divisor de águas
+                        na sua vida, é só acionar a garantia que eu devolvo todo
+                        o seu dinheiro sem pedir justificativas.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 12 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-12"
+                        aria-expanded="false"
+                        aria-controls="faq-item-12"
+                      >
+                        <div class="my-h5">
+                          funciona para vender serviços?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-12"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        o CODES foi feito para você! Aplicando o que ensino,
+                        você criará um fluxo contínuo de atração, retenção e
+                        vendas. E o melhor: você não precisará mais correr atrás
+                        de clientes ou dar descontos. O que vou te ensinar
+                        despertará tanto desejo no seu público que você corre o
+                        "risco” de ter que aumentar seu preço para equilibrar a
+                        demanda.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 13 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-13"
+                        aria-expanded="false"
+                        aria-controls="faq-item-13"
+                      >
+                        <div class="my-h5">
+                          funciona para qualquer nicho?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-13"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        sim! Se seu objetivo é usar o Instagram para vender seu
+                        serviço ou produto, se destacar no seu nicho e ter
+                        pessoas batendo na sua DM pedindo pelo seu link de
+                        compra, tudo o que você encontrará no CODES vai servir
+                        como um GPS pra te levar ao resultado que deseja.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 14 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-14"
+                        aria-expanded="false"
+                        aria-controls="faq-item-14"
+                      >
+                        <div class="my-h5">
+                          ensina tráfego?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-14"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        o content CODES não é um curso de tráfego, mas vai te
+                        ensinar a usar esse recurso pra atrair público comprador
+                        investindo o mínimo necessário.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 15 -->
+                <div class="faq-item">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-item-15"
+                        aria-expanded="false"
+                        aria-controls="faq-item-15"
+                      >
+                        <div class="my-h5">
+                          terei um espaço para tirar dúvidas?
+                          <div
+                            class="icon-container"
+                            style="width: 24px; height: 24px"
+                          ></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-item-15"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body my-text-md">
+                        sim! Você terá acesso ao nosso suporte de segunda a
+                        sexta por e-mail e direto na área exclusiva de membros,
+                        onde você poderá tirar qualquer dúvida que surgir ao
+                        longo das aulas.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+              <button class="my-button-lg">
+                QUERO TRANSFORMAR CONTEÚDO EM DINHEIRO
+                <img src="./assets/svgs/arrow-right.svg" />
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 5 && 'is-active'"
-        @click="selected !== 5 ? selected = 5 : selected = null">
-        <div class="question">funciona para vender produto f&#237;sico?</div>
-        <div class="answer" x-show="selected == 5" x-transition:enter.duration.500ms>
-          <p>o m&#233;todo content CODES foi pensado especialmente pra profissionais liberais e
-            aut&#244;nomos que querem ter pessoas batendo no seu direct pedindo seu servi&#231;o
-            todo dia. por&#233;m, tudo o que compartilho nele, tamb&#233;m pode ser adaptado para
-            quem vende produtos f&#237;sicos. ao passar pelos 4 pilares voc&#234; entender&#225; seu p&#250;blico
-            alvo num n&#237;vel profundo, ser&#225; capaz de posicionar o seu produto de forma
-            estrat&#233;gica pra se diferenciar da concorr&#234;ncia e dominar&#225; a arte de comunicar pra
-            gerar vendas sem ter que ficar correndo atr&#225;s de ningu&#233;m.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 6 && 'is-active'"
-        @click="selected !== 6 ? selected = 6 : selected = null">
-        <div class="question">funciona para vender servi&#231;os?</div>
-        <div class="answer" x-show="selected == 6" x-transition:enter.duration.500ms>
-          <p>com certeza! tudo o que desenvolvi e escolhi colocar no meu m&#233;todo foi
-            pensando especificamente em profissionais liberais e aut&#244;nomos que querem usar
-            o Instagram como vitrine para capta&#231;&#227;o de clientes. ao colocar em pr&#225;tica o que
-            ensino, voc&#234; ser&#225; capaz de criar um fluxo cont&#237;nuo de atra&#231;&#227;o qualificada,
-            reten&#231;&#227;o
-            e vendas no seu perfil. melhor ainda: você n&#227;o vai mais ter que ficar correndo atr&#225;s
-            de ningu&#233;m, tentando convencer seu prospecto e muito menos tendo que dar
-            desconto para ver se consegue fechar uma venda. os conhecimentos que vou te
-            entregar ser&#227;o capazes de despertar tanto desejo no seu público alvo que talvez
-            voc&#234; tenha que elevar o seu pre&#231;o pra poder nivelar com a demanda.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 7 && 'is-active'"
-        @click="selected !== 7 ? selected = 7 : selected = null">
-        <div class="question">funciona para qualquer nicho?</div>
-        <div class="answer" x-show="selected == 7" x-transition:enter.duration.500ms>
-          <p>sim! o que ensino no meu m&#233;todo n&#227;o tem nada a ver com trends, hacks ou
-            qualquer conceito raso e passageiro que voc&#234; j&#225; viu por a&#237;. o content CODES foi
-            desenvolvido com base em estudos da mente e do comportamento humano,
-            juntamente com os fundamentos do marketing. portanto, se seu objetivo &#233; usar o
-            Instagram para vender seu servi&#231;o ou produto, se destacar no seu nicho e ter
-            pessoas batendo na sua DM pedindo pelo seu link de compra, tudo o que voc&#234;
-            encontrar&#225; no meu m&#233;todo vai servir como um GPS pra te levar aos resultados que deseja.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 8 && 'is-active'"
-        @click="selected !== 8 ? selected = 8 : selected = null">
-        <div class="question">ensina tr&#225;fego?</div>
-        <div class="answer" x-show="selected == 8" x-transition:enter.duration.500ms>
-          <p>o content CODES n&#227;o &#233; um curso de tr&#225;fego, mas vai te ensinar a usar
-            esse recurso pra atrair p&#250;blico comprador investindo o m&#237;nimo necess&#225;rio e sem
-            complica&#231;&#227;o.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 9 && 'is-active'"
-        @click="selected !== 9 ? selected = 9 : selected = null">
-        <div class="question">ensina copy?</div>
-        <div class="answer" x-show="selected == 9" x-transition:enter.duration.500ms>
-          <p>o content CODES não é um curso de copy, mas ao concluir as aulas você
-            dominará a arte de despertar desejo e vender! isso porque no pilar de Conteúdo Estratégico, existe um módulo específico onde nos mergulhamos na escrita dos posts explorando desde estruturas de títulos que mais convertem até a escrita de cada página do carrossel e da descrição em si.
+      </section>
+
+      <section class="history">
+        <h2 class="my-h2 link-scroll" id="who-am-i">
+          um pouco da<br />
+          minha história...
+        </h2>
+
+        <div class="itens-container">
+          <img src="./assets/images/josie-history.png" alt="" />
+
+          <p class="my-text-md">
+            minha jornada no digital começou cedo, quando, aos 15 anos, me
+            aventurei como freelancer, criando conteúdo para blogs. Mas a
+            verdadeira virada na minha vida aconteceu aos 21 anos, quando vi meu
+            marido afundar em uma depressão devastadora. Determinada a ajudá-lo,
+            <span
+              >descobri um treinamento de comportamento humano que mudou nossas
+              vidas.</span
+            >
+            Esse aprendizado não só curou a depressão dele, como também nos deu
+            a coragem de recomeçar do zero, em um novo país – o Canadá.
+            <br />
+            <br />
+            em 2018, decidi compartilhar nossa jornada, documentando cada passo
+            no YouTube e Instagram. Usando o que aprendi naquele treinamento,
+            construímos uma comunidade super engajada que não apenas nos
+            acompanhava, mas confiava tanto em nós que sempre se interessavam
+            pelo que a gente recomendava.
+            <br />
+            <br />
+            foi essa experiência que me inspirou a mergulhar mais fundo no
+            marketing. Estudei marketing e comunicação aqui em Vancouver, e
+            <span
+              >me especializei em branding pessoal, posicionamento de marca, e
+              estratégia de conteúdo.</span
+            >
+            Quando combinei esses conhecimentos com os princípios de
+            comportamento humano que haviam transformado nossas vidas, nossas
+            redes sociais decolaram de vez!
           </p>
         </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 10 && 'is-active'"
-        @click="selected !== 10 ? selected = 10 : selected = null">
-        <div class="question">j&#225; fiz v&#225;rios cursos e nada funcionou pra mim, o content CODES vai mesmo
-          funcionar?</div>
-        <div class="answer" x-show="selected == 10" x-transition:enter.duration.500ms>
-          <p>sim e n&#227;o! deixa eu explicar: antes de criar o content CODES, eu comprei e
-            consumi v&#225;rios cursos de marketing do Brasil (desde os mais baratos at&#233; os
-            mais caros). eu queria entender o n&#237;vel de informa&#231;&#227;o que &#233; entregue no mercado
-            atualmente. 95% deles foram uma decep&#231;&#227;o e uma completa perda de dinheiro.
-            por isso, existe uma grande chance de voc&#234; s&#243; ter consumido informa&#231;&#227;o raza que
-            n&#227;o te leva a lugar nenhum e isso justifica sua falta de resultado. mas, pode ser
-            que voc&#234; j&#225; tenha consumido alguns dos poucos cursos que s&#227;o bons. se esse for
-            o seu caso e mesmo assim ele “n&#227;o funcionou pra voc&#234;”, pode ser que o problema
-            neste caso seja voc&#234;. n&#227;o me leve a mal, o content CODES &#233; extremamente
-            poderoso e tudo que tem l&#225; dentro pode transformar sua vida profissional de
-            verdade, por&#233;m n&#227;o &#233; milagre! voc&#234; vai ter que dedicar um pouco do seu tempo pra estudar e aplicar o que
-            ensino.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 11 && 'is-active'"
-        @click="selected !== 11 ? selected = 11 : selected = null">
-        <div class="question">terei um espaço para tirar d&#250;vidas?</div>
-        <div class="answer" x-show="selected == 11" x-transition:enter.duration.500ms>
-          <p>sim! você terá acesso ao nosso suporte de segunda a sexta por e-mail e direto na área exclusiva de membros, 
-            onde poderá tirar qualquer dúvida que surgir ao longo das aulas.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 12 && 'is-active'"
-        @click="selected !== 12 ? selected = 12 : selected = null">
-        <div class="question">o que acontece caso eu n&#227;o me identifique com o conte&#250;do?</div>
-        <div class="answer" x-show="selected == 12" x-transition:enter.duration.500ms>
-          <p>o content CODES foi desenvolvido e organizado da maneira mais dit&#225;dica
-            possível. por isso, te garanto que mesmo os conceitos mais avan&#231;ados que ensino
-            l&#225; dentro ser&#227;o facilmente entend&#237;veis e aplic&#225;veis. mesmo assim, quero que tenha
-            total tranquilidade para decidir se esse m&#233;todo serve ou n&#227;o pra voc&#234;. por isso,
-            voc&#234; tem 30 dias de garantia pra consumir as aulas, usar as ferramentas,
-            suporte... tudo mesmo! se por qualquer raz&#227;o voc&#234; achar que meu m&#233;todo n&#227;o foi
-            um divisor de &#225;guas na sua vida, &#233; s&#243; acionar a garantia que eu devolvo todo o seu
-            dinheiro sem pedir justificativas.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 13 && 'is-active'"
-        @click="selected !== 13 ? selected = 13 : selected = null">
-        <div class="question">quanto tempo terei acesso ao conte&#250;do?</div>
-        <div class="answer" x-show="selected == 13" x-transition:enter.duration.500ms>
-          <p>as aulas, ferramentas e suporte ficar&#227;o dispon&#237;veis por 1 ano
-            pra voc&#234; rever e usar quantas vezes quiser.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="acc-container" x-bind:class="selected == 14 && 'is-active'"
-        @click="selected !== 14 ? selected = 14 : selected = null">
-        <div class="question">as aulas s&#227;o ao vivo?</div>
-        <div class="answer" x-show="selected == 14" x-transition:enter.duration.500ms>
-          <p>não, as aulas são gravadas. porém, temos um suporte capacitado que fica disponível de segunda a sexta por e-mail 
-            e também diretamente na área de membros. a área de membros te permite comentar a cada aula pra você deixar suas dúvidas conforme 
-            elas forem surgindo. dessa forma, você terá um suporte prático, rápido e eficiente te ajudando ao longo do seu processo!</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <p>Copyright &#169; 2023 Josie Mafra All rights reserved</p>
+        <div class="itens-container">
+          <img
+            src="./assets/images/josie-history-2.png"
+            alt=""
+            style="order: 1"
+          />
 
-<script>
-    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
-    vgo('setAccount', '1002909318');
-    vgo('setTrackByDefault', true);
+          <div class="text-container">
+            <p class="my-text-md">os resultados foram impressionantes:</p>
+            <ul>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
 
-    vgo('process');
-</script>
-    
-  </footer>
-  
-<script>
-    let search = window.location.search;
-    document.querySelectorAll("a").forEach(element => {
-      if (element.href.includes("hotmart.com"))
-        if (element.href.includes("?")) {
-          search = search.replace("?", "&")
-        }
-      element.href += search
-    })
-  </script>
-  
-</body>
+                <p class="my-text-md">
+                  conquistamos 17 mil seguidores engajados
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
 
+                <p class="my-text-md">
+                  geramos R$ 40 mil em vendas com uma escola de inglês, apenas
+                  por afiliação
+                </p>
+              </li>
+              <li>
+                <img src="assets/svgs/tabler-icon-circle-check.svg" alt="" />
+
+                <p class="my-text-md">
+                  estabelecemos parcerias em negócios físicos e digitais
+                </p>
+              </li>
+            </ul>
+            <p class="my-text-md">
+              mesmo depois de um ano sem postar, as pessoas continuavam me
+              procurando, pedindo por consultoria. Foi aí que percebi o
+              verdadeiro
+              <span
+                >poder da união entre marketing e comportamento humano.</span
+              >
+              <br /><br />
+              e é exatamente esse poder que me motivou a criar o content CODES -
+              um método que transforma seguidores em clientes e cria conexões
+              autênticas e duradouras.
+              <br /><br />
+              mal posso esperar para te ajudar a descobrir a força dessa
+              combinação e transformar o seu negócio!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="content">
+          <h2 class="my-h2">
+            e aí, está pronto pra criar<br />
+            conteúdo que enche o seu bolso<br />
+            de dinheiro?
+          </h2>
+          <p class="my-text-md">
+            então vem fazer parte do content CODES que a gente está te<br />
+            esperando lá dentro do curso
+          </p>
+        </div>
+
+        <a href="https://pay.hotmart.com/H84711655R?checkoutMode=10">
+          <button class="my-button-lg button-section">
+            QUERO TRANSFORMAR CONTEÚDO EM DINHEIRO
+            <img src="./assets/svgs/arrow-right.svg" />
+          </button>
+        </a>
+        <img src="./assets/images/josie-devices.gif.png" alt="" />
+      </section>
+    </main>
+    <footer>
+      <p class="my-text_sm">Copyright © 2024 Josie Mafra All rights reserved</p>
+
+      <div class="itens">
+        <a href="#who-is-it-for" class="my-text_sm">pra quem é</a>
+        <a href="#what-will-you-learn" class="my-text_sm"
+          >o que você vai aprender</a
+        >
+        <a href="#benefits" class="my-text_sm">benefícios</a>
+        <a href="#who-am-i" class="my-text_sm">quem sou eu</a>
+        <a href="#faq" class="my-text_sm">FAQ</a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" id="scr_65f147c23504790008a55418">
+      var s = document.createElement("script");
+      (s.src =
+        "https://scripts.converteai.net/ba5d5066-c95d-44be-8a8b-a64f285fe02f/players/65f147c23504790008a55418/player.js"),
+        (s.async = !0),
+        document.head.appendChild(s);
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TZLKLPNR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+      (function (e, t, o, n, p, r, i) {
+        e.visitorGlobalObjectAlias = n;
+        e[e.visitorGlobalObjectAlias] =
+          e[e.visitorGlobalObjectAlias] ||
+          function () {
+            (e[e.visitorGlobalObjectAlias].q =
+              e[e.visitorGlobalObjectAlias].q || []).push(arguments);
+          };
+        e[e.visitorGlobalObjectAlias].l = new Date().getTime();
+        r = t.createElement("script");
+        r.src = o;
+        r.async = true;
+        i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+      })(
+        window,
+        document,
+        "[https://diffuser-cdn.app-us1.com/diffuser/diffuser.js",
+        "vgo](https://diffuser-cdn.app-us1.com/diffuser/diffuser.js%22,%22vgo)"
+      );
+      vgo("setAccount", "1002909318");
+      vgo("setTrackByDefault", true);
+      vgo("process");
+    </script>
+  </body>
 </html>

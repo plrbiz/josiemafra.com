@@ -1,0 +1,108 @@
+/* Buttons */
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none !important;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+.my-button-hero {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Vistol Sans";
+  font-weight: 800; /* Vistol Sans Black */
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  line-height: 28px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: linear-gradient(91.51deg, #905025 25.5%, #b37d57 84.66%);
+  color: var(--my-neutral-0);
+  transition: 0.2s;
+
+  box-shadow: 0px 2px 4px -2px #0000001a, 0px 4px 6px -1px #0000001a;
+}
+.my-button-hero:hover {
+  gap: 16px;
+
+  background: linear-gradient(91.51deg, #613619 25.5%, #7e5639 84.66%);
+
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+.my-button-hero:active {
+  gap: 12px;
+  padding-right: 32px !important;
+  padding-left: 32px !important;
+}
+.my-button-lg {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Vistol Sans";
+  font-weight: 800; /* Vistol Sans Black */
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  line-height: 28px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: var(--my-secondary-source);
+  color: var(--my-neutral-0);
+  transition: 0.2s;
+  overflow: hidden;
+
+  box-shadow: 0px 2px 4px -2px #0000001a, 0px 4px 6px -1px #0000001a;
+}
+.my-button-lg:hover {
+  gap: 16px;
+  background: var(--my-secondary-800);
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+.my-button-lg:active {
+  gap: 12px;
+  padding-right: 32px !important;
+  padding-left: 32px !important;
+}
+
+.my-button-sm {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Vistol Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.14px;
+  line-height: 20px;
+
+  border-radius: 12px;
+  padding: 8px 16px;
+  background-color: var(--my-secondary-source);
+  color: var(--my-neutral-50);
+  transition: 0.5s;
+}
+
+.my-button-sm:hover {
+  filter: brightness(1.2);
+}
+.my-button-sm:active {
+  filter: brightness(1);
+}

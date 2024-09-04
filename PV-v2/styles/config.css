@@ -1,0 +1,227 @@
+/* Arquivo utilizado para as principais configurações das cores e etc */
+
+/* Importação das fontes.. */
+/* Vistol Sans Thin */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Vistol Sans Extra Light */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Vistol Sans Light */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Vistol Sans Regular */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Vistol Sans Medium */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Vistol Sans Semi Bold */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Vistol Sans Bold */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Vistol Sans Extra Bold */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Vistol Sans Black */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Vistol Sans Thin Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Vistol Sans Extra Light Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-ExtraLightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Vistol Sans Light Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Vistol Sans Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Vistol Sans Medium Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Vistol Sans Semi Bold Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-SemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Vistol Sans Bold Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Vistol Sans Extra Bold Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Vistol Sans Black Italic */
+@font-face {
+  font-family: "Vistol Sans";
+  src: url("../fonts/VistolSans-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Variables */
+:root {
+  /* Primary */
+  --my-primary-source: #ab7650ff;
+  --my-primary-source-transparent: #ab76501a;
+  --my-primary-1000: #1c130dff;
+  --my-primary-950: #38261aff;
+  --my-primary-900: #533a27ff;
+  --my-primary-800: #6f4d34ff;
+  --my-primary-700: #8b6041ff;
+  --my-primary-600: #a7734eff;
+  --my-primary-500: #b78866ff;
+  --my-primary-400: #c49e82ff;
+  --my-primary-300: #d1b39eff;
+  --my-primary-200: #dec9baff;
+  --my-primary-100: #ebdfd5ff;
+  --my-primary-75: #f1eae4ff;
+  --my-primary-50: #f8f4f1ff;
+
+  /* Secondary */
+  --my-secondary-source: #01cc61ff;
+  --my-secondary-1000: #002913ff;
+  --my-secondary-950: #005127ff;
+  --my-secondary-900: #017a3aff;
+  --my-secondary-800: #01a24dff;
+  --my-secondary-700: #01cb61ff;
+  --my-secondary-600: #01f474ff;
+  --my-secondary-500: #20fe89ff;
+  --my-secondary-400: #48fe9eff;
+  --my-secondary-300: #71feb4ff;
+  --my-secondary-200: #99ffc9ff;
+  --my-secondary-100: #c2ffdfff;
+  --my-secondary-50: #ebfff4ff;
+
+  /* Neutral */
+  --my-neutral-1000: #151414ff;
+  --my-neutral-975: #1f1e1eff;
+  --my-neutral-950: #2a2927ff;
+  --my-neutral-900: #403d3bff;
+  --my-neutral-800: #55514eff;
+  --my-neutral-700: #6a6562ff;
+  --my-neutral-600: #7f7a76ff;
+  --my-neutral-500: #938e8aff;
+  --my-neutral-400: #a7a3a0ff;
+  --my-neutral-300: #bab7b5ff;
+  --my-neutral-200: #cecccaff;
+  --my-neutral-100: #e2e0dfff;
+  --my-neutral-75: #eceaeaff;
+  --my-neutral-50: #f5f5f4ff;
+  --my-neutral-25: #fafafaff;
+  --my-neutral-0: #ffffffff;
+}
+
+* {
+  font-family: "Vistol Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--my-neutral-0);
+  -webkit-font-smoothing: antialiased;
+}
+
+.link-scroll {
+  /* controle de distancia do alvo do rolamento... */
+  scroll-margin-top: 88px;
+}
+
+/* configuração do cursor... */
+.typed-cursor {
+  background: initial !important;
+  color: #b37d57 !important;
+
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  background-clip: initial !important;
+}
