@@ -23,6 +23,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-ms-overflow-style: none;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Avenir Medium';
 }
 
 body::-webkit-scrollbar {
@@ -62,8 +63,9 @@ ul.grid {
 }
 
 .img-responsive {
-	width: 100%;
+	width: 90%;
 	height: auto;
+	margin: auto; 
 }
 
 .italic {
@@ -125,7 +127,7 @@ button.btn:hover {
 
 @media screen and (min-width: 1200px) {
   .section-intro {
-    background-image: url(../img/josie-bg.png);
+    background-image: url(../img/josie-bg-rmkt.png);
 		background-size: cover;
 		background-position-x: center;
 		background-position-y: center;
@@ -134,7 +136,7 @@ button.btn:hover {
 }
 
 .section-intro h1 {
-	max-width: 820px;
+	max-width: 863px;
 	line-height: 110%;
 	font-family: 'Avenir Heavy';
 	font-size: 38px;
@@ -241,11 +243,22 @@ button.btn:hover {
 .section-one h1 {
 	margin: 50px 0 48px 0;
 	max-width: 760px;
-	font-size: 42px;
+	font-size: 34px;
 }
 
 .section-one .depoimentos-dm {
 	content: url(../img/depoimento_coders.png);
+	max-width: 95%
+}
+
+.section-one .depoimentos-dm2 {
+	content: url(../img/depoimento_coders2.png);
+	max-width: 95%
+}
+
+.section-one .depoimentos-dm3 {
+	content: url(../img/depoimento_coders3.png);
+	max-width: 95%
 }
 
 /*----------------
@@ -342,6 +355,14 @@ button.btn:hover {
     content: url(../img/depoimento_coders-mobile.png);
   }
 
+	.section-one .depoimentos-dm2 {
+    display: none;
+  }
+
+  .section-one .depoimentos-dm3 {
+    display: none;
+  }
+
 	.section-two .first-dm {
     content: url(../img/dm01-mobile.png);
   }
@@ -367,7 +388,7 @@ button.btn:hover {
 }
 
 .section-three .grey-box h1 {
-	margin-top: 60px;
+	margin-top: 45px;
 	margin-bottom: 45px;;
 	max-width: 699px;
 	font-size: 38px;
@@ -415,7 +436,7 @@ button.btn:hover {
 }
 
 .section-neuro-levels .img-responsive {
-	content: url(../img/escada-niveis-neuro.png);
+	content: url(../img/logica_metodo_Rmkt1.png);
 	width: 1060px;
 	margin: 60px 0 55px 0;
 }
@@ -460,18 +481,38 @@ button.btn:hover {
 ----------------*/
 
 .section-six {
+	background-color: var(--primary-color);
+	padding-top: 30px;
+	height: 570px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-six {
+		height: 710px;
+	}
+}
+
+.section-six {
 	padding-bottom: 100px;
 }
 
 .section-six h1 {
-	margin: 120px 0 50px 0;
+	margin: 50px 0 50px 0;
 	max-width: 610px;
 	font-size: 32px;
+	color: white;
 }
 
 .section-six .img-responsive {
 	content: url(../img/more-dms.png);
 	width: 1127px;
+}
+
+.section-six button {
+	margin-top: 66px;
+	margin-bottom: 25px;
+	padding: 20px 45px;
+	font-size: 18px;
 }
 
 /*----------------
@@ -546,40 +587,70 @@ button.btn:hover {
 
 .section-knowledges .pilar-one .content {
 	max-width: 443px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-one .img-responsive {
-	width: 253px;
+	width: 500px;
 }
 
 .section-knowledges .pilar-two .content {
 	max-width: 524px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-two .img-responsive {
-	width: 430px;
+	width: 500px;
 	margin-left: 0;
 }
 
 .section-knowledges .pilar-three .content {
 	max-width: 464px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-three .img-responsive {
-	width: 247px;
+	width: 500px;
 }
 
 .section-knowledges .pilar-four .content {
 	max-width: 553px;
+	line-height: 130%;
 }
 
 .section-knowledges .pilar-four .img-responsive {
-	width: 332px;
+	width: 500px;	
 	margin-left: 0;
 }
 
-.section-knowledges .knowledge-dms {
-	content: url(../img/knowledge-dms.png);
+
+/*----------------
+ 	Section Bonus
+----------------*/
+
+.section-bonus h1 {
+	margin: 50px 0 48px 0;
+	max-width: 760px;
+	font-size: 42px;
+}
+
+.section-bonus h2 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	max-width: 610px;
+	font-size: 26px;
+}
+
+.section-bonus .img-responsive {
+	content: url(../img/bonus-coders-house.gif);
+	width: 1360px;
+	margin: 60px 0 55px 0;
+}
+
+.section-bonus .img-responsive2 {
+	content: url(../img/bonus-adcodes.png);
+	width: 1360px;
+	margin: 60px 0 55px 0;
 }
 
 /*----------------
@@ -593,6 +664,7 @@ button.btn:hover {
 .section-devices h1 {
 	max-width: 757px;
 	font-size: 32px;
+	margin: 40px 0 40px 0;
 }
 
 .section-devices .text {
@@ -663,7 +735,7 @@ button.btn:hover {
 }
 
 .section-price .brown-access {
-	height: 1062px;
+	height: 1250px;
 	background: linear-gradient(to top, #f8f8f8 0%, #f8f8f8 30%, var(--primary-color) 30%, var(--primary-color) 100%);
 }
 
@@ -747,7 +819,7 @@ button.btn:hover {
 }
 
 .section-price .price-info p:last-child {
-	font-size: 21px;
+	font-size: 20px;
 }
 
 .section-price .price-info hr {
@@ -966,7 +1038,7 @@ footer {
 	}
 
 	.section-price .brown-access {
-		height: 1020px;
+		height: 1220px;
 	}
 
 	.section-history {

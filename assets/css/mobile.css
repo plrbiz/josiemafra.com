@@ -23,7 +23,7 @@
   }
 
   .section-intro h1 {
-    max-width: 290px;
+    max-width: 329px;
     font-size: 24px;
   }
 
@@ -49,7 +49,7 @@
     margin-top: 10px;
     margin-bottom: 30px;
     width: 310px;
-    height: 235px;
+    height: 180px;
   }
 
   .section-intro button {
@@ -140,7 +140,7 @@
 
   .section-three .grey-box h1 {
 	  margin: 25px 0 35px 0;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .section-three .grey-box .arrow-container {
@@ -156,7 +156,7 @@
   }
   
   .section-neuro-levels p:nth-child(1) {
-    font-size: 15px;
+    font-size: 16px;
     max-width: 330px;
   }
 
@@ -178,7 +178,7 @@
   
   .section-neuro-levels p:last-child {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .section-neuro-levels .img-responsive {
@@ -220,6 +220,7 @@
 
   .section-six {
     padding-bottom: 40px;
+    height: 637px;
   }
 
   .section-six h1 {
@@ -231,6 +232,12 @@
   .section-six .img-responsive {
     content: url(../img/more-dms-mobile.png);
     width: 350px;
+  }
+
+  .section-six button {
+    margin-top: 55px;
+    padding: 23px 30px;
+    font-size: 12px;
   }
 
   /*----------------
@@ -352,7 +359,7 @@
   }
 
   .section-knowledges .pilar-one .img-responsive {
-    width: 183px;
+    width: 260px;
   }
 
   .section-knowledges .pilar-two .img-responsive {
@@ -360,16 +367,45 @@
   }
 
   .section-knowledges .pilar-three .img-responsive {
-    width: 160px;
+    width: 280px;
   }
 
   .section-knowledges .pilar-four .img-responsive {
-    width: 240px;
+    width: 340px;
   }
 
   .section-knowledges .knowledge-dms {
     content: url(../img/knowledge-dms-mobile.png);
   }
+
+/*----------------
+  Section Bonus
+----------------*/
+
+.section-bonus h1 {
+  margin: 50px 0 48px 0;
+  max-width: 760px;
+  font-size: 42px;
+}
+
+.section-bonus h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-width: 610px;
+  font-size: 26px;
+}
+
+.section-bonus .img-responsive {
+  content: url(../img/bonus-coders-house-mobile.gif);
+  width: 352px;
+  margin: 45px 0 20px 0;
+}
+
+.section-bonus .img-responsive2 {
+  content: url(../img/bonus-adcodes-mobile.png);
+  width: 352px;
+  margin: 45px 0 20px 0;
+}
 
   /*----------------
     Section Devices
@@ -432,7 +468,7 @@
   ----------------*/
 
   .section-price .brown-access {
-    height: 700px;
+    height: 820px;
   }
 
   .section-price .brown-access .access-content {
@@ -501,7 +537,7 @@
     margin: 20px auto;
     width: 24px;
   }
-
+	
   /*----------------
     Accordion
   ----------------*/
