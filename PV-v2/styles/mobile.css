@@ -350,7 +350,7 @@
   /* exclusive-bonus */
 
   section.exclusive-bonus {
-    display: flex !important;
+    display: none !important;
     flex-direction: column !important;
     padding: 40px 24px !important;
     margin: 0px auto 40px !important;
