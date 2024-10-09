@@ -442,7 +442,7 @@ section.exclusive-bonus {
   max-width: 1360px;
   margin: 0px auto 144px;
   padding: 88px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 146px;
   border-radius: 40px;
