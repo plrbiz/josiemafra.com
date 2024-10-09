@@ -448,7 +448,6 @@ section.exclusive-bonus {
   border-radius: 40px;
   background: var(--my-neutral-975);
   color: var(--my-neutral-50);
-  display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   justify-content: start;
