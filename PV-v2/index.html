@@ -193,6 +193,34 @@
     <link rel="stylesheet" href="./styles/mobile.css" />
   </head>
   <body>
+
+     <!-- Countdown temporário -->
+
+  <div class="top-countdown">
+  <span class="countdown-text">O valor de lançamento expira em</span>
+  <span id="top-countdown-timer">
+    <span class="time-unit">
+      <span class="time-value" id="top-days"></span>
+      <span class="time-label">DIAS</span>
+    </span>
+    <span>:</span>
+    <span class="time-unit">
+      <span class="time-value" id="top-hours"></span>
+      <span class="time-label">HORAS</span>
+    </span>
+    <span>:</span>
+    <span class="time-unit">
+      <span class="time-value" id="top-minutes"></span>
+      <span class="time-label">MINUTOS</span>
+    </span>
+    <span>:</span>
+    <span class="time-unit">
+      <span class="time-value" id="top-seconds"></span>
+      <span class="time-label">SEGUNDOS</span>
+    </span>
+  </span>
+</div>
+    
     <!-- Hero -->
     <div class="hero-container">
       <div class="hero-content">
@@ -2173,5 +2201,56 @@
       vgo("setTrackByDefault", true);
       vgo("process");
     </script>
+
+  <!-- CountDown aumento de preço em 30/11/2024 -->
+
+<script>
+  function startCountdown() {
+    const targetDate = new Date("November 30, 2024 23:59:59").getTime();
+
+    const elements = {
+      top: {
+        days: document.getElementById("top-days"),
+        hours: document.getElementById("top-hours"),
+        minutes: document.getElementById("top-minutes"),
+        seconds: document.getElementById("top-seconds")
+      },
+      bottom: {
+        days: document.getElementById("days"),
+        hours: document.getElementById("hours"),
+        minutes: document.getElementById("minutes"),
+        seconds: document.getElementById("seconds")
+      }
+    };
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
+
+      if (timeLeft < 0) {
+        clearInterval(timer);
+        Object.values(elements.top).forEach(el => (el.innerHTML = "0"));
+        Object.values(elements.bottom).forEach(el => (el.innerHTML = "0"));
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      elements.top.days.innerHTML = elements.bottom.days.innerHTML = days;
+      elements.top.hours.innerHTML = elements.bottom.hours.innerHTML = String(hours).padStart(2, '0');
+      elements.top.minutes.innerHTML = elements.bottom.minutes.innerHTML = String(minutes).padStart(2, '0');
+      elements.top.seconds.innerHTML = elements.bottom.seconds.innerHTML = String(seconds).padStart(2, '0');
+    }
+
+    const timer = setInterval(updateCountdown, 1000);
+    updateCountdown(); // Initialize immediately
+  }
+
+  window.onload = startCountdown;
+</script>
+    
   </body>
 </html>
