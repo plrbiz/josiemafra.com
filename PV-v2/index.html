@@ -194,28 +194,32 @@
   </head>
   <body>
 
-        <!-- Countdown temporário -->
+ <!-- Countdown temporário -->
 
-        <div id="countdown-timer" class="bottom-countdown">
-          <div class="time-unit">
-            <span class="time-value" id="days"></span>
-            <span class="time-label">DIAS</span>
-          </div>
-            <div class="time-unit">
-            <span class="time-value" id="hours"></span>
-          <span class="time-label">HORAS</span>
-        </div>
-        <div class="time-unit">
-          <span class="time-value" id="minutes"></span>
-          <span class="time-label">MINUTOS</span>
-        </div>
-        <div class="time-unit">
-          <span class="time-value" id="seconds"></span>
-          <span class="time-label">SEGUNDOS</span>
-        </div>
-        </div>
-
-       <!--Fim Countdown temporário -->
+  <div class="top-countdown">
+  <span class="countdown-text">O valor de lançamento expira em</span>
+  <span id="top-countdown-timer">
+    <span class="time-unit">
+      <span class="time-value" id="top-days"></span>
+      <span class="time-label">DIAS</span>
+    </span>
+    <span>:</span>
+    <span class="time-unit">
+      <span class="time-value" id="top-hours"></span>
+      <span class="time-label">HORAS</span>
+    </span>
+    <span>:</span>
+    <span class="time-unit">
+      <span class="time-value" id="top-minutes"></span>
+      <span class="time-label">MINUTOS</span>
+    </span>
+    <span>:</span>
+    <span class="time-unit">
+      <span class="time-value" id="top-seconds"></span>
+      <span class="time-label">SEGUNDOS</span>
+    </span>
+  </span>
+</div>
     
     <!-- Hero -->
     <div class="hero-container">
@@ -1396,6 +1400,30 @@
               <p class="obs-tag my-text-md">
                 *Aproveite o desconto de lançamento! O preço do CODES vai subir ao final desta contagem 👇🏼
               </p>
+
+        <!-- Countdown temporário -->
+
+        <div id="countdown-timer" class="bottom-countdown">
+          <div class="time-unit">
+            <span class="time-value" id="days"></span>
+            <span class="time-label">DIAS</span>
+          </div>
+            <div class="time-unit">
+            <span class="time-value" id="hours"></span>
+          <span class="time-label">HORAS</span>
+        </div>
+        <div class="time-unit">
+          <span class="time-value" id="minutes"></span>
+          <span class="time-label">MINUTOS</span>
+        </div>
+        <div class="time-unit">
+          <span class="time-value" id="seconds"></span>
+          <span class="time-label">SEGUNDOS</span>
+        </div>
+        </div>
+
+       <!-- Fim Countdown temporário -->
+              
             </div>
             <div class="bottom-container">
               <img
@@ -2197,11 +2225,11 @@
       vgo("process");
     </script>
 
-  <!-- CountDown aumento de preço em 30/11/2024 -->
+  <!-- Countdown aumento de preço em 30/11/2024 -->
 
 <script>
   function startCountdown() {
-    const targetDate = new Date("November 30, 2024 23:59:00").getTime();
+    const targetDate = new Date("November 30, 2024 23:59:59").getTime();
 
     const elements = {
       top: {
